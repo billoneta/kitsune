@@ -19,8 +19,7 @@
     "format": "turbo run format && pnpm formater",
     "format:check": "turbo run format:check && pnpm formater:check",
     "lint": "turbo run lint && pnpm linter:check",
-    "lint:fix": "turbo run lint:fix && pnpm linter:check",
-    "generate-docs": "tsx src/generateDocs.ts"
+    "lint:fix": "turbo run lint:fix && pnpm linter:check"
   },
   "repository": {
     "type": "git",

@@ -11,10 +11,10 @@ import type { ChangelogPluginOptions } from '@/release-config/types';
  * @returns {PluginSpec<ChangelogPluginOptions>} semantic-release plugin configuration
  */
 export const changelogPlugin = (options: ChangelogPluginOptions = {}): PluginSpec<ChangelogPluginOptions> => {
- options = Object.fromEntries(Object.entries(options).filter(([_, v]) => v !== undefined));
- const { changelogFile, changelogTitle } = options;
+  options = Object.fromEntries(Object.entries(options).filter(([_, v]) => v !== undefined));
+  const { changelogFile, changelogTitle } = options;
 
- const defaultChangelogTitle = dedent(`
+  const defaultChangelogTitle = dedent(`
     <a name="changelog-top"></a>
 
     <div align="center">
@@ -39,11 +39,11 @@ export const changelogPlugin = (options: ChangelogPluginOptions = {}): PluginSpe
     ---
  `);
 
- return [
-  '@semantic-release/changelog',
-  {
-   changelogFile: changelogFile ?? 'CHANGELOG.md',
-   changelogTitle: changelogTitle ?? defaultChangelogTitle,
-  },
- ];
+  return [
+    '@semantic-release/changelog',
+    {
+      changelogFile: changelogFile ?? 'CHANGELOG.md',
+      changelogTitle: changelogTitle ?? defaultChangelogTitle,
+    },
+  ];
 };

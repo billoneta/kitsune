@@ -1,29 +1,29 @@
 {
- "$schema": "https://json.schemastore.org/lefthook.json",
- "pre-commit": {
-  "parallel": true,
-  "commands": {
-   "lint": {
-    "run": "pnpm eslint . --fix",
-    "glob": "*.{js,cjs,mjs,jsx,ts,mts,tsx,vue,astro,svelte}",
-    "stage_fixed": false,
-    "fail_text": "ESLint Error: Troubleshoot before committing"
-   },
-   "format": {
-    "run": "pnpm prettier . --write --cache --ignore-unknown",
-    "glob": "*.{js,cjs,mjs,jsx,ts,mts,tsx,json,html,css,scss,yml,yaml,vue,astro,svelte}",
-    "stage_fixed": false,
-    "fail_text": "Prettier Error: Could not format files"
-   }
+  "$schema": "https://json.schemastore.org/lefthook.json",
+  "pre-commit": {
+    "parallel": true,
+    "commands": {
+      "lint": {
+        "run": "pnpm eslint . --fix",
+        "glob": "*.{js,cjs,mjs,jsx,ts,mts,tsx,vue,astro,svelte}",
+        "stage_fixed": false,
+        "fail_text": "ESLint Error: Troubleshoot before committing"
+      },
+      "format": {
+        "run": "pnpm prettier . --write --cache --ignore-unknown",
+        "glob": "*.{js,cjs,mjs,jsx,ts,mts,tsx,json,html,css,scss,yml,yaml,vue,astro,svelte}",
+        "stage_fixed": false,
+        "fail_text": "Prettier Error: Could not format files"
+      }
+    }
+  },
+  "commit-msg": {
+    "commands": {
+      "commitlint": {
+        "run": "pnpm commitlint --edit {1}",
+        "skip": ["merge", "rebase"],
+        "fail_text": "Commitlint Error: Use the conventional format: \":sparkles: type(scope): description\"."
+      }
+    }
   }
- },
- "commit-msg": {
-  "commands": {
-   "commitlint": {
-    "run": "pnpm commitlint --edit {1}",
-    "skip": ["merge", "rebase"],
-    "fail_text": "Commitlint Error: Use the conventional format: \":sparkles: type(scope): description\"."
-   }
-  }
- }
 }

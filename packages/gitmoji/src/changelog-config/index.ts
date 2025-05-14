@@ -11,9 +11,9 @@ import createGitmojiWriterOpts from '@/changelog-config/writer';
  * @property {Function} whatBump - Version bump calculator function
  */
 export default function createPreset() {
- return {
-  parser: createParserOpts(),
-  writer: createGitmojiWriterOpts(config()),
-  whatBump,
- };
+  return {
+    parser: createParserOpts(),
+    writer: createGitmojiWriterOpts(config()),
+    whatBump,
+  };
 }

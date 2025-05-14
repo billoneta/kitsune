@@ -15,9 +15,9 @@ import regexs from '@/regexs';
  * - Regular expressions for validation
  */
 export default {
- changelog: changelogConfig(),
- commitTypes,
- commitlint: commitlintConfig,
- parser: parser(),
- regexs,
+  changelog: changelogConfig(),
+  commitTypes,
+  commitlint: commitlintConfig,
+  parser: parser(),
+  regexs,
 };

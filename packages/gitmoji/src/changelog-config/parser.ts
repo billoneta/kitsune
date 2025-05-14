@@ -11,10 +11,10 @@ import createGitmojiParserOpts from '@/parser';
  * @property {string[]} revertCorrespondence - Field mappings for revert commits
  */
 export default function createParserOpts() {
- return {
-  ...createGitmojiParserOpts(),
-  noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES'],
-  revertPattern: /revert:\s([\s\S]*?)\s*This reverts commit (\w*)\./,
-  revertCorrespondcene: [`header`, `hash`],
- };
+  return {
+    ...createGitmojiParserOpts(),
+    noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES'],
+    revertPattern: /revert:\s([\s\S]*?)\s*This reverts commit (\w*)\./,
+    revertCorrespondcene: [`header`, `hash`],
+  };
 }

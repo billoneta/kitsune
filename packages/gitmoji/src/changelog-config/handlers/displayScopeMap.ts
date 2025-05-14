@@ -7,15 +7,15 @@ import { Config } from '@/changelog-config/types';
  * @returns {string} The mapped display name or original scope if no mapping exists
  */
 export const displayScopeMap = (scope: string, customScopeMap: Config['customScopeMap']): string => {
- if (!scope || !customScopeMap) return scope;
+  if (!scope || !customScopeMap) return scope;
 
- const custom = customScopeMap[scope];
- if (custom) return custom;
+  const custom = customScopeMap[scope];
+  if (custom) return custom;
 
- const all = customScopeMap['*'];
- if (all) {
-  return all.replace(/\*/g, scope);
- }
+  const all = customScopeMap['*'];
+  if (all) {
+    return all.replace(/\*/g, scope);
+  }
 
- return scope;
+  return scope;
 };

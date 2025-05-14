@@ -51,37 +51,37 @@ import type { ReleaseConfigOptions } from '@/release-config/types';
  * @returns {Options} Complete semantic-release configuration
  */
 function releaseConfig(options: ReleaseConfigOptions = {}): Options {
- options = Object.fromEntries(Object.entries(options).filter(([_, v]) => v !== undefined));
- const { branches, ci, tagFormat, plugins, ...customized } = options;
+  options = Object.fromEntries(Object.entries(options).filter(([_, v]) => v !== undefined));
+  const { branches, ci, tagFormat, plugins, ...customized } = options;
 
- const defaultPlugins: PluginSpec[] = [
-  // prettier
-  commitAnalyzerPlugin(options.commitAnalyzer),
-  execPlugin(options.exec),
-  releaseNotesGeneratorPlugin(options.releaseNotesGenerator),
-  changelogPlugin(options.changelog),
-  npmPlugin(options.npm),
-  gitPlugin(options.git),
-  githubPlugin(options.github),
- ];
+  const defaultPlugins: PluginSpec[] = [
+    // prettier
+    commitAnalyzerPlugin(options.commitAnalyzer),
+    execPlugin(options.exec),
+    releaseNotesGeneratorPlugin(options.releaseNotesGenerator),
+    changelogPlugin(options.changelog),
+    npmPlugin(options.npm),
+    gitPlugin(options.git),
+    githubPlugin(options.github),
+  ];
 
- return {
-  branches: branches ?? [
-   // prettier
-   { name: 'main', channel: 'latest' },
-   { name: 'master', channel: 'latest' },
-   { name: 'next', channel: 'next', prerelease: 'next' },
-   { name: 'next-*', channel: 'next', prerelease: 'next' },
-   { name: 'beta', channel: 'beta', prerelease: 'beta' },
-   { name: 'beta-*', channel: 'beta', prerelease: 'beta' },
-   { name: 'dev', channel: 'alpha', prerelease: 'alpha' },
-   { name: 'dev-*', channel: 'alpha', prerelease: 'alpha' },
-  ],
-  ci: ci ?? true,
-  tagFormat: tagFormat ?? 'v${version}',
-  plugins: [...(plugins ?? []), ...defaultPlugins].filter(Boolean),
-  ...customized,
- };
+  return {
+    branches: branches ?? [
+      // prettier
+      { name: 'main', channel: 'latest' },
+      { name: 'master', channel: 'latest' },
+      { name: 'next', channel: 'next', prerelease: 'next' },
+      { name: 'next-*', channel: 'next', prerelease: 'next' },
+      { name: 'beta', channel: 'beta', prerelease: 'beta' },
+      { name: 'beta-*', channel: 'beta', prerelease: 'beta' },
+      { name: 'dev', channel: 'alpha', prerelease: 'alpha' },
+      { name: 'dev-*', channel: 'alpha', prerelease: 'alpha' },
+    ],
+    ci: ci ?? true,
+    tagFormat: tagFormat ?? 'v${version}',
+    plugins: [...(plugins ?? []), ...defaultPlugins].filter(Boolean),
+    ...customized,
+  };
 }
 
 export default releaseConfig;

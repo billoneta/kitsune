@@ -10,29 +10,29 @@ import type { GitPluginOptions } from '@/release-config/types';
  * @returns {PluginSpec<GitPluginOptions>} semantic-release plugin configuration
  */
 export const gitPlugin = (options: GitPluginOptions = {}): PluginSpec<GitPluginOptions> => {
- options = Object.fromEntries(Object.entries(options).filter(([_, v]) => v !== undefined));
- const { assets, message } = options;
+  options = Object.fromEntries(Object.entries(options).filter(([_, v]) => v !== undefined));
+  const { assets, message } = options;
 
- const defaultAssets = ['CHANGELOG.md', 'package.json', 'pnpm-lock.yaml'];
+  const defaultAssets = ['CHANGELOG.md', 'package.json', 'pnpm-lock.yaml'];
 
- const resolveAssets = () => {
-  if (typeof assets === 'boolean') return false;
-  if (typeof assets === 'string') return [assets];
-  if (Array.isArray(assets)) return [...assets, ...defaultAssets].filter(Boolean);
-  return defaultAssets;
- };
+  const resolveAssets = () => {
+    if (typeof assets === 'boolean') return false;
+    if (typeof assets === 'string') return [assets];
+    if (Array.isArray(assets)) return [...assets, ...defaultAssets].filter(Boolean);
+    return defaultAssets;
+  };
 
- return [
-  '@semantic-release/git',
-  {
-   assets: resolveAssets(),
-   message:
-    message ??
-    [
-     // prettier
-     '♻️ chore(RELEASE): ${nextRelease.tag} v${nextRelease.version} [skip ci]\n',
-     '📝 Release Notes:\n${nextRelease.notes}',
-    ].join('\n'),
-  },
- ];
+  return [
+    '@semantic-release/git',
+    {
+      assets: resolveAssets(),
+      message:
+        message ??
+        [
+          // prettier
+          '♻️ chore(RELEASE): ${nextRelease.tag} v${nextRelease.version} [skip ci]\n',
+          '📝 Release Notes:\n${nextRelease.notes}',
+        ].join('\n'),
+    },
+  ];
 };

@@ -12,33 +12,33 @@ import commitTypes from '@/commit-types';
  * @returns {QualifiedRules} Commitlint rules configuration
  */
 export default function createGitmojiRules(): QualifiedRules {
- return {
-  // Core Gitmoji requirement
-  'start-with-gitmoji': [RuleConfigSeverity.Error, 'always'],
+  return {
+    // Core Gitmoji requirement
+    'start-with-gitmoji': [RuleConfigSeverity.Error, 'always'],
 
-  // Length rules (disabled for flexibility with emojis)
-  'body-max-line-length': [RuleConfigSeverity.Disabled],
-  'footer-max-line-length': [RuleConfigSeverity.Disabled],
-  'header-max-length': [RuleConfigSeverity.Disabled],
+    // Length rules (disabled for flexibility with emojis)
+    'body-max-line-length': [RuleConfigSeverity.Disabled],
+    'footer-max-line-length': [RuleConfigSeverity.Disabled],
+    'header-max-length': [RuleConfigSeverity.Disabled],
 
-  // Spacing rules
-  'body-leading-blank': [RuleConfigSeverity.Error, 'always'],
-  'footer-leading-blank': [RuleConfigSeverity.Error, 'always'],
+    // Spacing rules
+    'body-leading-blank': [RuleConfigSeverity.Error, 'always'],
+    'footer-leading-blank': [RuleConfigSeverity.Error, 'always'],
 
-  // Header formatting
-  'header-trim': [RuleConfigSeverity.Error, 'always'],
+    // Header formatting
+    'header-trim': [RuleConfigSeverity.Error, 'always'],
 
-  // Scope validation
-  'scope-case': [RuleConfigSeverity.Error, 'always', ['lower-case', 'upper-case', 'camel-case', 'pascal-case', 'kebab-case', 'snake-case']],
+    // Scope validation
+    'scope-case': [RuleConfigSeverity.Error, 'always', ['lower-case', 'upper-case', 'camel-case', 'pascal-case', 'kebab-case', 'snake-case']],
 
-  // Subject validation
-  'subject-case': [RuleConfigSeverity.Disabled],
-  'subject-empty': [RuleConfigSeverity.Error, 'never'],
-  'subject-full-stop': [RuleConfigSeverity.Error, 'never', '.'],
+    // Subject validation
+    'subject-case': [RuleConfigSeverity.Disabled],
+    'subject-empty': [RuleConfigSeverity.Error, 'never'],
+    'subject-full-stop': [RuleConfigSeverity.Error, 'never', '.'],
 
-  // Type validation
-  'type-empty': [RuleConfigSeverity.Error, 'never'],
-  'type-case': [RuleConfigSeverity.Error, 'always', 'lower-case'],
-  'type-enum': [RuleConfigSeverity.Error, 'always', commitTypes.map((commit) => commit)],
- };
+    // Type validation
+    'type-empty': [RuleConfigSeverity.Error, 'never'],
+    'type-case': [RuleConfigSeverity.Error, 'always', 'lower-case'],
+    'type-enum': [RuleConfigSeverity.Error, 'always', commitTypes.map((commit) => commit)],
+  };
 }

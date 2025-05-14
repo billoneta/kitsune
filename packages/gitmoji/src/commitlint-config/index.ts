@@ -13,10 +13,10 @@ import createGitmojiRules from '@/commitlint-config/rules';
  * - Loads Gitmoji plugin for extended functionality
  */
 const config: UserConfig = {
- formatter: '@commitlint/format',
- rules: createGitmojiRules(),
- parserPreset: createGitmojiPreset(),
- plugins: [createGitmojiPlugin()],
+  formatter: '@commitlint/format',
+  rules: createGitmojiRules(),
+  parserPreset: createGitmojiPreset(),
+  plugins: [createGitmojiPlugin()],
 } satisfies UserConfig;
 
 export default config;

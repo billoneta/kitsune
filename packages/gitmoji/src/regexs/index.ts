@@ -21,14 +21,14 @@ export const gitmojiCodeRegex: RegExp = new RegExp(/:\w*:/);
  * @returns {RegExp} that matches Unicode emoji characters defined in the gitmoji list  (e.g., '🎨', '⚡️', '🔥', '🐛').
  */
 export const gitmojiUnicodeRegex: RegExp = new RegExp(
- gitmojis
-  .map((gitmoji) => gitmoji.emoji)
-  .filter(Boolean)
-  .join('|')
+  gitmojis
+    .map((gitmoji) => gitmoji.emoji)
+    .filter(Boolean)
+    .join('|')
 );
 
 export default {
- emojiStandardRegex,
- gitmojiCodeRegex,
- gitmojiUnicodeRegex,
+  emojiStandardRegex,
+  gitmojiCodeRegex,
+  gitmojiUnicodeRegex,
 };

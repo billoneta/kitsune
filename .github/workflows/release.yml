@@ -3,48 +3,48 @@ name: Release
 on: [push, pull_request]
 
 jobs:
- release:
-  name: Auto Release
-  runs-on: ubuntu-latest
-  permissions:
-   contents: write # Allows writing to the repository (necessary for pushing tags and changes)
-   issues: write # Allows creating and modifying issues
-   pull-requests: write # Allows creating and modifying pull requests
-   id-token: write # Grants access to GitHub Actions ID token
-   actions: write # Allows execution of custom GitHub Actions
-   packages: write # Allows publishing packages to GitHub Packages (if applicable)
-   deployments: write # Allows deployment of releases (if deploying automatically)
-   discussions: write # Allows interacting with GitHub Discussions (if used)
-  strategy:
-   fail-fast: false
-   matrix:
-    node: ['lts/*']
-  steps:
-   - name: Checkout code
-     uses: actions/checkout@v4
-     with:
-      fetch-depth: 0
+  release:
+    name: Auto Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Allows writing to the repository (necessary for pushing tags and changes)
+      issues: write # Allows creating and modifying issues
+      pull-requests: write # Allows creating and modifying pull requests
+      id-token: write # Grants access to GitHub Actions ID token
+      actions: write # Allows execution of custom GitHub Actions
+      packages: write # Allows publishing packages to GitHub Packages (if applicable)
+      deployments: write # Allows deployment of releases (if deploying automatically)
+      discussions: write # Allows interacting with GitHub Discussions (if used)
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ['lts/*']
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-   - name: Setup PNPM
-     uses: pnpm/action-setup@v4
-     with:
-      standalone: true
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          standalone: true
 
-   - name: Setup Node.js ${{ matrix.node }}
-     uses: actions/setup-node@v4
-     with:
-      node-version: ${{ matrix.node }}
-      always-auth: true
-      cache: 'pnpm'
+      - name: Setup Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          always-auth: true
+          cache: 'pnpm'
 
-   - name: Install dependencies
-     run: pnpm install
+      - name: Install dependencies
+        run: pnpm install
 
-   - name: Build
-     run: pnpm run build
+      - name: Build
+        run: pnpm run build
 
-   - name: Run Semantic-release
-     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-     run: pnpm ci:release
+      - name: Run Semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm ci:release

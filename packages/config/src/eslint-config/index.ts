@@ -8,17 +8,17 @@ import turboConfig from '@/eslint-config/configs/turbo';
 import typescriptConfig from '@/eslint-config/configs/typescript';
 
 type Configs = {
- [K in 'base' | 'next' | 'node' | 'prettier' | 'react' | 'turbo' | 'typescript']: Linter.Config[];
+  [K in 'base' | 'next' | 'node' | 'prettier' | 'react' | 'turbo' | 'typescript']: Linter.Config[];
 };
 
 const eslintConfigs: Configs = {
- base: baseConfig,
- node: nodeConfig,
- turbo: turboConfig,
- next: nextConfig,
- react: reactConfig,
- typescript: typescriptConfig,
- prettier: prettierConfig,
+  base: baseConfig,
+  node: nodeConfig,
+  turbo: turboConfig,
+  next: nextConfig,
+  react: reactConfig,
+  typescript: typescriptConfig,
+  prettier: prettierConfig,
 } satisfies Configs;
 
 export default eslintConfigs;

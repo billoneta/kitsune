@@ -13,17 +13,17 @@ import type { ExecPluginOptions } from '@/release-config/types';
  * @returns {PluginSpec<ExecPluginOptions>} semantic-release plugin configuration
  */
 export const execPlugin = (options: ExecPluginOptions = {}): PluginSpec<ExecPluginOptions> => {
- options = Object.fromEntries(Object.entries(options).filter(([_, v]) => v !== undefined));
- const { prepareCmd, publishCmd, successCmd, failCmd, ...customized } = options;
+  options = Object.fromEntries(Object.entries(options).filter(([_, v]) => v !== undefined));
+  const { prepareCmd, publishCmd, successCmd, failCmd, ...customized } = options;
 
- return [
-  '@semantic-release/exec',
-  {
-   prepareCmd: prepareCmd ?? 'echo "📦 Preparing release ${nextRelease.tag} v${nextRelease.version}"',
-   publishCmd: publishCmd ?? 'echo "🚀 Publishing release ${nextRelease.tag} v${nextRelease.version}"',
-   successCmd: successCmd ?? 'echo "✅ Release ${nextRelease.tag} v${nextRelease.version} published successfully!"',
-   failCmd: failCmd ?? 'echo "🛑 Failed to publish release ${nextRelease.tag} v${nextRelease.version}"',
-   ...customized,
-  },
- ];
+  return [
+    '@semantic-release/exec',
+    {
+      prepareCmd: prepareCmd ?? 'echo "📦 Preparing release ${nextRelease.tag} v${nextRelease.version}"',
+      publishCmd: publishCmd ?? 'echo "🚀 Publishing release ${nextRelease.tag} v${nextRelease.version}"',
+      successCmd: successCmd ?? 'echo "✅ Release ${nextRelease.tag} v${nextRelease.version} published successfully!"',
+      failCmd: failCmd ?? 'echo "🛑 Failed to publish release ${nextRelease.tag} v${nextRelease.version}"',
+      ...customized,
+    },
+  ];
 };

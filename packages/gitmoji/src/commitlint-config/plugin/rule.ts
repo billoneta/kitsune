@@ -15,38 +15,38 @@ const notInListError = (emoji: string) => `${emoji} is not in the correct gitmoj
  * @returns {[boolean, string]} Tuple with validation result and error message
  */
 const createGitmojiRule: Rule = (commit): [boolean, string] => {
- const commitMessage = commit.header?.trim() || '';
+  const commitMessage = commit.header?.trim() || '';
 
- if (!commitMessage) {
+  if (!commitMessage) {
+    return [false, defaultErrorMessage];
+  }
+
+  const gitmojiCodePattern = new RegExp(`^(${gitmojiCodeRegex.source})\\s`);
+  const gitmojiUnicodePattern = new RegExp(`^(${gitmojiUnicodeRegex.source})\\s`);
+  const emojiStandardPattern = new RegExp(`^(${emojiStandardRegex.source})\\s`);
+
+  const testGitmojiCode = gitmojiCodePattern.exec(commitMessage);
+  const testGitmojiUnicode = gitmojiUnicodePattern.exec(commitMessage);
+  const testStandardEmoji = emojiStandardPattern.exec(commitMessage);
+
+  if (testGitmojiCode) {
+    const [_, code] = testGitmojiCode;
+    const isValid = gitmojiCodes.includes(code);
+    return [isValid, isValid ? '' : notInListError(code)];
+  }
+
+  if (testGitmojiUnicode) {
+    const [_, unicode] = testGitmojiUnicode;
+    const isValid = gitmojiUnicodes.includes(unicode);
+    return [isValid, isValid ? '' : notInListError(unicode)];
+  }
+
+  if (testStandardEmoji) {
+    const [_, emoji] = testStandardEmoji;
+    return [false, notInListError(emoji)];
+  }
+
   return [false, defaultErrorMessage];
- }
-
- const gitmojiCodePattern = new RegExp(`^(${gitmojiCodeRegex.source})\\s`);
- const gitmojiUnicodePattern = new RegExp(`^(${gitmojiUnicodeRegex.source})\\s`);
- const emojiStandardPattern = new RegExp(`^(${emojiStandardRegex.source})\\s`);
-
- const testGitmojiCode = gitmojiCodePattern.exec(commitMessage);
- const testGitmojiUnicode = gitmojiUnicodePattern.exec(commitMessage);
- const testStandardEmoji = emojiStandardPattern.exec(commitMessage);
-
- if (testGitmojiCode) {
-  const [_, code] = testGitmojiCode;
-  const isValid = gitmojiCodes.includes(code);
-  return [isValid, isValid ? '' : notInListError(code)];
- }
-
- if (testGitmojiUnicode) {
-  const [_, unicode] = testGitmojiUnicode;
-  const isValid = gitmojiUnicodes.includes(unicode);
-  return [isValid, isValid ? '' : notInListError(unicode)];
- }
-
- if (testStandardEmoji) {
-  const [_, emoji] = testStandardEmoji;
-  return [false, notInListError(emoji)];
- }
-
- return [false, defaultErrorMessage];
 };
 
 export default createGitmojiRule;

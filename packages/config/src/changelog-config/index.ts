@@ -20,56 +20,56 @@ import displayCommitTypes from '@k4i/gitmoji/commit-types';
  */
 
 const changelogConfig: Config = {
- customCommitTypeMap: {
-  feat: {
-   emoji: '✨',
+  customCommitTypeMap: {
+    feat: {
+      emoji: '✨',
+    },
+    fix: {
+      emoji: '🐛',
+    },
+    perf: {
+      emoji: '⚡',
+    },
+    refactor: {
+      emoji: '♻',
+    },
+    chore: {
+      emoji: '🔧',
+    },
+    docs: {
+      emoji: '📝',
+    },
+    build: {
+      emoji: '📦️',
+    },
+    ci: {
+      emoji: '👷',
+    },
+    test: {
+      emoji: '✅',
+    },
+    style: {
+      emoji: '🎨',
+    },
+    wip: {
+      emoji: '🚑️',
+    },
+    revert: {
+      emoji: '⏪',
+    },
   },
-  fix: {
-   emoji: '🐛',
+  customScopeMap: {
+    '*': '🎯 *',
   },
-  perf: {
-   emoji: '⚡',
-  },
-  refactor: {
-   emoji: '♻',
-  },
-  chore: {
-   emoji: '🔧',
-  },
-  docs: {
-   emoji: '📝',
-  },
-  build: {
-   emoji: '📦️',
-  },
-  ci: {
-   emoji: '👷',
-  },
-  test: {
-   emoji: '✅',
-  },
-  style: {
-   emoji: '🎨',
-  },
-  wip: {
-   emoji: '🚑️',
-  },
-  revert: {
-   emoji: '⏪',
-  },
- },
- customScopeMap: {
-  '*': '🎯 *',
- },
- // displayScopes: [],
- displayCommitTypes,
- showAuthor: true,
- showAuthorAvatar: true,
- showSummary: true,
- withEmoji: true,
- reduceHeadingLevel: true,
- newlineTimestamp: true,
- addBackToTop: true,
+  // displayScopes: [],
+  displayCommitTypes,
+  showAuthor: true,
+  showAuthorAvatar: true,
+  showSummary: true,
+  withEmoji: true,
+  reduceHeadingLevel: true,
+  newlineTimestamp: true,
+  addBackToTop: true,
 } satisfies Config;
 
 export default changelogConfig;
