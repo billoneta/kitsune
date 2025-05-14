@@ -21,6 +21,35 @@
 
 ---
 
+## [Version&nbsp;`1.1.0`](https://github.com/k4itrun/kitsune/compare/v1.0.2...v1.1.0)
+🗓️ **Released:** `2025-05-14`
+
+#### ✨ Features
+
+add NPM publish workflow for automated package deployment.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### New features and enhancements
+
+* Add NPM publish workflow for automated package deployment ([636b06c](https://github.com/k4itrun/kitsune/commit/636b06c))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.0.2`](https://github.com/k4itrun/kitsune/compare/v1.0.1...v1.0.2)
 🗓️ **Released:** `2025-05-14`
 
