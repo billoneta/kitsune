@@ -23,6 +23,8 @@ jobs:
   steps:
    - name: Check for new release tag
      id: check-release
+     env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
      run: |
       LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
       NEW_TAGS=$(git tag --contains ${{ github.event.workflow_run.head_sha }} --list 'v*')
