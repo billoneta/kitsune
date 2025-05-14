@@ -1,0 +1,151 @@
+{
+  "name": "@k4i/config",
+  "description": "🧱 My customized Config of Linters and Semantic release and others.",
+  "version": "5.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./changelog-config": {
+      "types": "./dist/changelog-config/index.d.ts",
+      "import": "./dist/changelog-config/index.js"
+    },
+    "./commitlint-config": {
+      "types": "./dist/commitlint-config/index.d.ts",
+      "import": "./dist/commitlint-config/index.js"
+    },
+    "./eslint-config": {
+      "types": "./dist/eslint-config/index.d.ts",
+      "import": "./dist/eslint-config/index.js"
+    },
+    "./eslint-config/base": {
+      "types": "./dist/eslint-config/configs/base.d.ts",
+      "import": "./dist/eslint-config/configs/base.js"
+    },
+    "./eslint-config/turbo": {
+      "types": "./dist/eslint-config/configs/turbo.d.ts",
+      "import": "./dist/eslint-config/configs/turbo.js"
+    },
+    "./eslint-config/prettier": {
+      "types": "./dist/eslint-config/configs/prettier.d.ts",
+      "import": "./dist/eslint-config/configs/prettier.js"
+    },
+    "./eslint-config/next": {
+      "types": "./dist/eslint-config/configs/next.d.ts",
+      "import": "./dist/eslint-config/configs/next.js"
+    },
+    "./eslint-config/node": {
+      "types": "./dist/eslint-config/configs/node.d.ts",
+      "import": "./dist/eslint-config/configs/node.js"
+    },
+    "./eslint-config/react": {
+      "types": "./dist/eslint-config/configs/react.d.ts",
+      "import": "./dist/eslint-config/configs/react.js"
+    },
+    "./eslint-config/typescript": {
+      "types": "./dist/eslint-config/configs/typescript.d.ts",
+      "import": "./dist/eslint-config/configs/typescript.js"
+    },
+    "./prettier-config": {
+      "types": "./dist/prettier-config/index.d.ts",
+      "import": "./dist/prettier-config/index.js"
+    },
+    "./release-config": {
+      "types": "./dist/release-config/index.d.ts",
+      "import": "./dist/release-config/index.js"
+    },
+    "./lefthook-config": "./dist/lefthook-config/base.json",
+    "./renovate-config": "./dist/renovate-config/base.json"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "pnpm run clean && tsup --config tsup.config.ts && tsx copy.ts",
+    "publish-pkg": "pnpm publish --access public --no-git-checks --provenance=false",
+    "publish-pkg:next": "pnpm publish --access public --no-git-checks --provenance=false --tag next",
+    "publish-pkg:test": "pnpm publish --access public --no-git-checks --provenance=false --dry-run",
+    "format": "prettier . --write --cache --ignore-unknown",
+    "format:check": "prettier . --check --ignore-unknown",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k4itrun/kitsune.git"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "license.md"
+  ],
+  "keywords": [],
+  "author": {
+    "name": "k4itrun",
+    "email": "tsx@billoneta.xyz"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/k4itrun/kitsune/issues"
+  },
+  "funding": "https://github.com/sponsors/k4itrun",
+  "homepage": "https://github.com/k4itrun/kitsune#readme",
+  "dependencies": {
+    "@eslint-react/eslint-plugin": "1.49.0",
+    "@eslint/compat": "1.2.9",
+    "@eslint/eslintrc": "3.3.1",
+    "@eslint/js": "9.26.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@k4i/gitmoji": "^5.0.0",
+    "@next/eslint-plugin-next": "15.3.2",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.2",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.3",
+    "@stylistic/eslint-plugin": "4.2.0",
+    "@typescript-eslint/parser": "8.32.0",
+    "chalk": "^5.4.1",
+    "dedent": "^1.6.0",
+    "eslint-config-flat-gitignore": "2.1.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-flat-config-utils": "2.0.1",
+    "eslint-plugin-import-x": "4.11.1",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-n": "17.18.0",
+    "eslint-plugin-prettier": "^5.4.0",
+    "eslint-plugin-turbo": "^2.5.3",
+    "globals": "16.1.0",
+    "lodash.clonedeep": "^4.5.0",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "semantic-release": "^24.2.3",
+    "typescript-eslint": "8.32.0"
+  },
+  "devDependencies": {
+    "@commitlint/types": "^19.8.1",
+    "@types/lodash.clonedeep": "^4.5.9",
+    "@types/node": "22.15.17",
+    "glob": "^11.0.2",
+    "rimraf": "6.0.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "eslint": "^9",
+    "prettier": "^3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/index.d.ts"
+      ]
+    }
+  }
+}

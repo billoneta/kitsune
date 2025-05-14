@@ -1,0 +1,69 @@
+{
+  "name": "@k4i/utils",
+  "description": "🧱 My customized Utilities for any project.",
+  "version": "5.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./logger": {
+      "types": "./dist/logger/index.d.ts",
+      "import": "./dist/logger/index.js"
+    }
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "pnpm run clean && tsup --config tsup.config.ts",
+    "publish-pkg": "pnpm publish --access public --no-git-checks --provenance=false",
+    "publish-pkg:next": "pnpm publish --access public --no-git-checks --provenance=false --tag next",
+    "publish-pkg:test": "pnpm publish --access public --no-git-checks --provenance=false --dry-run",
+    "format": "prettier . --write --cache --ignore-unknown",
+    "format:check": "prettier . --check --ignore-unknown",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k4itrun/kitsune.git"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "license.md"
+  ],
+  "keywords": [],
+  "author": {
+    "name": "k4itrun",
+    "email": "tsx@billoneta.xyz"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/k4itrun/kitsune/issues"
+  },
+  "funding": "https://github.com/sponsors/k4itrun",
+  "homepage": "https://github.com/k4itrun/kitsune#readme",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "glob": "^11.0.2",
+    "moment": "^2.30.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.3",
+    "rimraf": "6.0.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/index.d.ts"
+      ]
+    }
+  }
+}

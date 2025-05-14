@@ -1,0 +1,59 @@
+{
+  "name": "@k4i/kitsune",
+  "description": "🧱 Config kit using Linters, Semantic release, Lefthook, and a collection of helpful Utilities to simplify your code.",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": null,
+  "scripts": {
+    "build": "turbo run build",
+    "publish-pkg": "turbo run publish-pkg",
+    "publish-pkg:next": "turbo run publish-pkg:next",
+    "publish-pkg:test": "turbo run publish-pkg:test",
+    "hook:init": "lefthook install",
+    "ci:release": "semantic-release",
+    "ci:commitlint": "commitlint --from=HEAD~10",
+    "formater": "prettier . --write --cache --ignore-unknown",
+    "formater:check": "prettier . --check --ignore-unknown",
+    "linter": "eslint . --fix",
+    "linter:check": "eslint .",
+    "format": "turbo run format && pnpm formater",
+    "format:check": "turbo run format:check && pnpm formater:check",
+    "lint": "turbo run lint && pnpm linter:check",
+    "lint:fix": "turbo run lint:fix && pnpm linter:check",
+    "generate-docs": "tsx src/generateDocs.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k4itrun/kitsune.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "k4itrun",
+    "email": "tsx@billoneta.xyz"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/k4itrun/kitsune/issues"
+  },
+  "funding": "https://github.com/sponsors/k4itrun",
+  "homepage": "https://github.com/k4itrun/kitsune#readme",
+  "dependencies": {
+    "@k4i/gitmoji": "^5.0.0",
+    "@k4i/utils": "workspace:*",
+    "markdown-table": "3.0.4",
+    "turbo": "2.5.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/types": "^19.8.1",
+    "@k4i/config": "workspace:*",
+    "@types/node": "22.15.17",
+    "eslint": "9.26.0",
+    "lefthook": "^1.11.12",
+    "prettier": "3.5.3",
+    "semantic-release": "^24.2.3",
+    "tsx": "4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@10.11.0"
+}
