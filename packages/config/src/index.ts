@@ -64,9 +64,9 @@ import releaseConfig from '@/release-config';
  */
 
 export default {
-  changelog: changelogConfig,
-  commitlint: commitlintConfig,
-  eslint: eslintConfig,
-  prettier: prettierConfig,
-  release: releaseConfig,
+ changelog: changelogConfig,
+ commitlint: commitlintConfig,
+ eslint: eslintConfig,
+ prettier: prettierConfig,
+ release: releaseConfig,
 };

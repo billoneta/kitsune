@@ -11,14 +11,14 @@ import type { NpmPluginOptions } from '@/release-config/types';
  * @returns {PluginSpec<NpmPluginOptions>} semantic-release plugin configuration
  */
 export const npmPlugin = (options: NpmPluginOptions = {}): PluginSpec<NpmPluginOptions> => {
-  options = Object.fromEntries(Object.entries(options).filter(([_, v]) => v !== undefined));
-  const { npmPublish, ...customized } = options;
+ options = Object.fromEntries(Object.entries(options).filter(([_, v]) => v !== undefined));
+ const { npmPublish, ...customized } = options;
 
-  return [
-    '@semantic-release/npm',
-    {
-      npmPublish: npmPublish ?? false,
-      ...customized,
-    },
-  ];
+ return [
+  '@semantic-release/npm',
+  {
+   npmPublish: npmPublish ?? false,
+   ...customized,
+  },
+ ];
 };

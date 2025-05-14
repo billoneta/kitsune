@@ -12,10 +12,10 @@ import createGitmojiParserOpts from '@/parser';
  * @returns {LintOptions} Commitlint configuration options
  */
 export default function createGitmojiPreset(): LintOptions {
-  return {
-    parserOpts: createGitmojiParserOpts(),
-    plugins: {
-      gitmoji: createGitmojiPlugin(),
-    },
-  };
+ return {
+  parserOpts: createGitmojiParserOpts(),
+  plugins: {
+   gitmoji: createGitmojiPlugin(),
+  },
+ };
 }

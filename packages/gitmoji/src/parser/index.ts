@@ -19,8 +19,8 @@ import { emojiStandardRegex, gitmojiCodeRegex, gitmojiUnicodeRegex } from '@/reg
  * @property {string[]} headerCorrespondence - Mapping of captured groups
  */
 export default function createGitmojiParserOpts() {
-  return {
-    headerPattern: new RegExp(`^(?:${String(emojiStandardRegex.source)}|(?:${String(gitmojiCodeRegex.source)})|(?:${String(gitmojiUnicodeRegex.source)}))\\s(?<type>\\w*)(?:\\((?<scope>.*)\\))?!?:\\s(?<subject>(?:(?!#).)*(?:(?!\\s).))(?:\\s\\(?(?<ticket>#\\d*)\\)?)?$`),
-    headerCorrespondence: ['type', 'scope', 'subject', 'ticket'],
-  };
+ return {
+  headerPattern: new RegExp(`^(?:${String(emojiStandardRegex.source)}|(?:${String(gitmojiCodeRegex.source)})|(?:${String(gitmojiUnicodeRegex.source)}))\\s(?<type>\\w*)(?:\\((?<scope>.*)\\))?!?:\\s(?<subject>(?:(?!#).)*(?:(?!\\s).))(?:\\s\\(?(?<ticket>#\\d*)\\)?)?$`),
+  headerCorrespondence: ['type', 'scope', 'subject', 'ticket'],
+ };
 }

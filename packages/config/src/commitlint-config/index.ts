@@ -31,7 +31,7 @@ import type { UserConfig } from '@commitlint/types';
  */
 
 const commitlintConfig: UserConfig = {
-  extends: ['@k4i/gitmoji/commitlint-config'],
+ extends: ['@k4i/gitmoji/commitlint-config'],
 } satisfies UserConfig;
 
 export default commitlintConfig;

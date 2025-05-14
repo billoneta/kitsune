@@ -1,75 +1,75 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":dependencyDashboard", ":semanticCommits", ":semanticCommitTypeAll(chore)", ":rebaseStalePrs"],
-  "dependencyDashboard": true,
-  "dependencyDashboardTitle": "Dependency Updates Dashboard",
-  "labels": ["dependencies"],
-  "assignees": ["k4itrun"],
-  "reviewers": ["k4itrun"],
-  "timezone": "America/Los_Angeles",
+ "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+ "extends": ["config:base", ":dependencyDashboard", ":semanticCommits", ":semanticCommitTypeAll(chore)", ":rebaseStalePrs"],
+ "dependencyDashboard": true,
+ "dependencyDashboardTitle": "Dependency Updates Dashboard",
+ "labels": ["dependencies"],
+ "assignees": ["k4itrun"],
+ "reviewers": ["k4itrun"],
+ "timezone": "America/Los_Angeles",
 
-  "prCreation": "not-pending",
-  "prHourlyLimit": 2,
-  "prConcurrentLimit": 5,
-  "branchConcurrentLimit": 10,
+ "prCreation": "not-pending",
+ "prHourlyLimit": 2,
+ "prConcurrentLimit": 5,
+ "branchConcurrentLimit": 10,
 
-  "lockFileMaintenance": {
-    "enabled": true,
-    "automerge": true,
-    "schedule": ["before 5am on monday"]
+ "lockFileMaintenance": {
+  "enabled": true,
+  "automerge": true,
+  "schedule": ["before 5am on monday"]
+ },
+
+ "semanticCommitScope": "deps",
+ "prBodyTemplate": "{{{table}}}{{{changelogs}}}{{{warnings}}}{{{notes}}}{{{controls}}}",
+ "commitBodyTable": true,
+ "prFooter": "",
+
+ "packageRules": [
+  {
+   "matchPackagePatterns": ["@udecode/plate*"],
+   "groupName": "Plate Editor",
+   "automerge": false
   },
+  {
+   "matchPackagePatterns": ["contentlayer"],
+   "groupName": "Contentlayer",
+   "automerge": false
+  },
+  {
+   "matchPackageNames": ["eslint", "prettier", "typescript", "vitest", "jest"],
+   "groupName": "Tooling",
+   "automerge": true,
+   "automergeType": "branch"
+  },
+  {
+   "matchPackagePatterns": ["react", "react-dom", "next"],
+   "groupName": "React Core",
+   "automerge": false
+  },
+  {
+   "matchDepTypes": ["devDependencies"],
+   "matchUpdateTypes": ["minor", "patch"],
+   "automerge": true,
+   "automergeType": "branch"
+  },
+  {
+   "matchUpdateTypes": ["major"],
+   "groupName": "Major Upgrades",
+   "schedule": ["on saturday", "on sunday"]
+  },
+  {
+   "matchDepTypes": ["peerDependencies", "engines"],
+   "rangeStrategy": "pin"
+  },
+  {
+   "matchPaths": ["packages/**"],
+   "groupName": "Monorepo Packages",
+   "automerge": false
+  }
+ ],
 
-  "semanticCommitScope": "deps",
-  "prBodyTemplate": "{{{table}}}{{{changelogs}}}{{{warnings}}}{{{notes}}}{{{controls}}}",
-  "commitBodyTable": true,
-  "prFooter": "",
+ "schedule": ["after 10pm every weekday", "before 5am every weekday", "every weekend"],
 
-  "packageRules": [
-    {
-      "matchPackagePatterns": ["@udecode/plate*"],
-      "groupName": "Plate Editor",
-      "automerge": false
-    },
-    {
-      "matchPackagePatterns": ["contentlayer"],
-      "groupName": "Contentlayer",
-      "automerge": false
-    },
-    {
-      "matchPackageNames": ["eslint", "prettier", "typescript", "vitest", "jest"],
-      "groupName": "Tooling",
-      "automerge": true,
-      "automergeType": "branch"
-    },
-    {
-      "matchPackagePatterns": ["react", "react-dom", "next"],
-      "groupName": "React Core",
-      "automerge": false
-    },
-    {
-      "matchDepTypes": ["devDependencies"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true,
-      "automergeType": "branch"
-    },
-    {
-      "matchUpdateTypes": ["major"],
-      "groupName": "Major Upgrades",
-      "schedule": ["on saturday", "on sunday"]
-    },
-    {
-      "matchDepTypes": ["peerDependencies", "engines"],
-      "rangeStrategy": "pin"
-    },
-    {
-      "matchPaths": ["packages/**"],
-      "groupName": "Monorepo Packages",
-      "automerge": false
-    }
-  ],
-
-  "schedule": ["after 10pm every weekday", "before 5am every weekday", "every weekend"],
-
-  "rebaseWhen": "conflicted",
-  "platformAutomerge": true
+ "rebaseWhen": "conflicted",
+ "platformAutomerge": true
 }

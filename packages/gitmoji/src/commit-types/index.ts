@@ -18,19 +18,19 @@ import { CommitTypes } from '@/commit-types/types';
  * - wip: Work in progress (special case)
  */
 const commitTypes: CommitTypes[] = [
-  // prettier
-  'feat',
-  'fix',
-  'perf',
-  'refactor',
-  'chore',
-  'docs',
-  'build',
-  'ci',
-  'test',
-  'style',
-  'wip',
-  'revert',
+ // prettier
+ 'feat',
+ 'fix',
+ 'perf',
+ 'refactor',
+ 'chore',
+ 'docs',
+ 'build',
+ 'ci',
+ 'test',
+ 'style',
+ 'wip',
+ 'revert',
 ];
 
 export default commitTypes;

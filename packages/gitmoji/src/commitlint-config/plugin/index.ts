@@ -11,9 +11,9 @@ import createGitmojiRule from '@/commitlint-config/plugin/rule';
  * @returns {Plugin} Commitlint plugin configuration
  */
 export default function createGitmojiPlugin(): Plugin {
-  return {
-    rules: {
-      'start-with-gitmoji': createGitmojiRule,
-    },
-  };
+ return {
+  rules: {
+   'start-with-gitmoji': createGitmojiRule,
+  },
+ };
 }

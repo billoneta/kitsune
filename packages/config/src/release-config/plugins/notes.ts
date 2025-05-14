@@ -12,14 +12,14 @@ import type { ReleaseNotesGeneratorPluginOptions } from '@/release-config/types'
  * @returns {PluginSpec<ReleaseNotesGeneratorPluginOptions>} semantic-release plugin configuration
  */
 export const releaseNotesGeneratorPlugin = (options: ReleaseNotesGeneratorPluginOptions = {}): PluginSpec<ReleaseNotesGeneratorPluginOptions> => {
-  options = Object.fromEntries(Object.entries(options).filter(([_, v]) => v !== undefined));
-  const { config, ...customized } = options;
+ options = Object.fromEntries(Object.entries(options).filter(([_, v]) => v !== undefined));
+ const { config, ...customized } = options;
 
-  return [
-    '@semantic-release/release-notes-generator',
-    {
-      config: config ?? '@k4i/gitmoji/changelog-config',
-      ...customized,
-    },
-  ];
+ return [
+  '@semantic-release/release-notes-generator',
+  {
+   config: config ?? '@k4i/gitmoji/changelog-config',
+   ...customized,
+  },
+ ];
 };
