@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.0.1`](https://github.com/k4itrun/kitsune/compare/v1.0.0...v1.0.1)
+🗓️ **Released:** `2025-05-14`
+
+#### 🐛 Bug Fixes
+
+format code for consistency across all files.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Resolved bugs and issues
+
+* Format code for consistency across all files ([d23874f](https://github.com/k4itrun/kitsune/commit/d23874f))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ## Version&nbsp;`1.0.0`
 🗓️ **Released:** `2025-05-14`
 
