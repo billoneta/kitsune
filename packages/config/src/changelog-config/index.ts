@@ -8,8 +8,8 @@ import displayCommitTypes from '@billoneta/gitmoji/commit-types';
  *
  * @example
  * // Basic usage in changelog.config.js:
- * import changelogConfig from '@billoneta/config/changelog-config';
- * export default changelogConfig; // <- already has a good default setting.
+ * import defineConfig from '@billoneta/config/changelog-config';
+ * export default defineConfig(); // <- already has a good default setting.
  *
  * @example
  * // Customizing changelog:
@@ -17,9 +17,11 @@ import displayCommitTypes from '@billoneta/gitmoji/commit-types';
  *   ...changelogConfig,
  *   ...Args
  * };
+ *
+ * export default defineConfig(customConfig);
  */
 
-const changelogConfig: Config = {
+const defaultConfig: Config = {
  customCommitTypeMap: {
   feat: {
    emoji: '✨',
@@ -72,4 +74,7 @@ const changelogConfig: Config = {
  addBackToTop: true,
 } satisfies Config;
 
-export default changelogConfig;
+export default function defineConfig(config?: Config): Config {
+ if (!config || typeof config !== 'object') return defaultConfig;
+ return config;
+}
