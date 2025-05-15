@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.12`](https://github.com/billoneta/kitsune/compare/v1.1.11...v1.1.12)
+🗓️ **Released:** `2025-05-15`
+
+#### 🐛 Bug Fixes
+
+Update package versions to 1.0.4 for config, gitmoji, and utils packages.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Resolved bugs and issues
+
+* Update package versions to 1.0.4 for config, gitmoji, and utils packages ([309dcee](https://github.com/billoneta/kitsune/commit/309dcee))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.11`](https://github.com/billoneta/kitsune/compare/v1.1.10...v1.1.11)
 🗓️ **Released:** `2025-05-15`
 
