@@ -1,7 +1,7 @@
 {
   "name": "@k4i/kitsune",
   "description": "🧱 Config kit using Linters, Semantic release, Lefthook, and a collection of helpful Utilities to simplify your code.",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "type": "module",
   "exports": null,
   "scripts": {

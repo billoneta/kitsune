@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.3`](https://github.com/k4itrun/kitsune/compare/v1.1.2...v1.1.3)
+🗓️ **Released:** `2025-05-15`
+
+#### 🐛 Bug Fixes
+
+Rename jobs for clarity and remove unused publish workflow files.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Resolved bugs and issues
+
+* Rename jobs for clarity and remove unused publish workflow files ([64af77c](https://github.com/k4itrun/kitsune/commit/64af77c))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.2`](https://github.com/k4itrun/kitsune/compare/v1.1.1...v1.1.2)
 🗓️ **Released:** `2025-05-14`
 
