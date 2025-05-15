@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.8`](https://github.com/billoneta/kitsune/compare/v1.1.7...v1.1.8)
+🗓️ **Released:** `2025-05-15`
+
+#### 🐛 Bug Fixes
+
+Update Pull Request section for clarity and consistency in instructions.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Resolved bugs and issues
+
+* Update Pull Request section for clarity and consistency in instructions ([c1a9755](https://github.com/billoneta/kitsune/commit/c1a9755))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.7`](https://github.com/billoneta/kitsune/compare/v1.1.6...v1.1.7)
 🗓️ **Released:** `2025-05-15`
 
