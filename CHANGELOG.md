@@ -21,6 +21,38 @@
 
 ---
 
+### [Version&nbsp;`1.1.6`](https://github.com/billoneta/kitsune/compare/v1.1.5...v1.1.6)
+🗓️ **Released:** `2025-05-15`
+
+#### 🐛 Bug Fixes
+
+- **🎯 Changelog**: Refactor changelog configuration to use defineConfig for improved customization.
+Refactor changelog and release configuration to use defineConfig for improved type checking and consistency.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Resolved bugs and issues
+
+* **🎯 Changelog**: Refactor changelog configuration to use defineConfig for improved customization ([65b9db0](https://github.com/billoneta/kitsune/commit/65b9db0))
+
+* Refactor changelog and release configuration to use defineConfig for improved type checking and consistency ([155b4b2](https://github.com/billoneta/kitsune/commit/155b4b2))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.5`](https://github.com/billoneta/kitsune/compare/v1.1.4...v1.1.5)
 🗓️ **Released:** `2025-05-15`
 
