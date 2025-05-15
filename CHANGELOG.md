@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.4`](https://github.com/k4itrun/kitsune/compare/v1.1.3...v1.1.4)
+🗓️ **Released:** `2025-05-15`
+
+#### 🐛 Bug Fixes
+
+Update package versions to 5.0.1 for config, gitmoji, and utils.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Resolved bugs and issues
+
+* Update package versions to 5.0.1 for config, gitmoji, and utils ([9845ba7](https://github.com/k4itrun/kitsune/commit/9845ba7))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.3`](https://github.com/k4itrun/kitsune/compare/v1.1.2...v1.1.3)
 🗓️ **Released:** `2025-05-15`
 
