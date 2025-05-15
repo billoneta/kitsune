@@ -21,6 +21,38 @@
 
 ---
 
+### [Version&nbsp;`1.1.5`](https://github.com/billoneta/kitsune/compare/v1.1.4...v1.1.5)
+🗓️ **Released:** `2025-05-15`
+
+#### 🐛 Bug Fixes
+
+- **🎯 Int-publish**: Update workflow configurations to ensure proper authentication for GitHub and NPM package publishing.
+Refactor project to use @** scope for all configurations and dependencies.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Resolved bugs and issues
+
+* **🎯 Int-publish**: Update workflow configurations to ensure proper authentication for GitHub and NPM package publishing ([8bd7be3](https://github.com/billoneta/kitsune/commit/8bd7be3))
+
+* Refactor project to use @** scope for all configurations and dependencies ([2d4f6dd](https://github.com/billoneta/kitsune/commit/2d4f6dd))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.4`](https://github.com/k4itrun/kitsune/compare/v1.1.3...v1.1.4)
 🗓️ **Released:** `2025-05-15`
 
