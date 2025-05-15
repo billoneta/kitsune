@@ -1,7 +1,7 @@
 {
   "name": "@billoneta/config",
   "description": "🧱 My customized Config of Linters and Semantic release and others.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "exports": {
     ".": {

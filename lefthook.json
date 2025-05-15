@@ -1,4 +1,4 @@
 {
  "$schema": "https://json.schemastore.org/lefthook.json",
- "extends": ["packages/config/src/lefthook-config/base.json"]
+ "extends": ["node_modules/@billoneta/config/dist/lefthook-config/base.json"]
 }
