@@ -1,7 +1,7 @@
 {
   "name": "@k4i/config",
   "description": "🧱 My customized Config of Linters and Semantic release and others.",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "type": "module",
   "exports": {
     ".": {
