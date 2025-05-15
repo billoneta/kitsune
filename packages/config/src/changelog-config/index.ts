@@ -74,7 +74,11 @@ const defaultConfig: Config = {
  addBackToTop: true,
 } satisfies Config;
 
-export default function defineConfig(config?: Config): Config {
- if (!config || typeof config !== 'object') return defaultConfig;
- return config;
+function changelogConfig(options: Config = defaultConfig): Config {
+ if (!options || Object.keys(options).length === 0) return defaultConfig;
+ return options;
 }
+
+export default changelogConfig;
+
+export { Config };

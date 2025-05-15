@@ -11,7 +11,7 @@
     "publish-pkg:test": "turbo run publish-pkg:test",
     "hook:init": "lefthook install",
     "ci:release": "semantic-release",
-    "ci:commitlint": "commitlint --from=HEAD~10",
+    "ci:commitlint": "commitlint",
     "formater": "prettier . --write --cache --ignore-unknown",
     "formater:check": "prettier . --check --ignore-unknown",
     "linter": "eslint . --fix",
@@ -37,13 +37,13 @@
   "funding": "https://github.com/sponsors/k4itrun",
   "homepage": "https://github.com/billoneta/kitsune#readme",
   "dependencies": {
+    "@billoneta/config": "workspace:*",
     "@billoneta/gitmoji": "^1.0.0",
     "@billoneta/utils": "workspace:*",
     "markdown-table": "3.0.4",
     "turbo": "2.5.3"
   },
   "devDependencies": {
-    "@billoneta/config": "workspace:*",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/types": "^19.8.1",
     "@types/node": "22.15.17",

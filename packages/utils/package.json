@@ -16,9 +16,9 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "pnpm run clean && tsup --config tsup.config.ts",
-    "publish-pkg": "pnpm publish --access public --no-git-checks --provenance=false",
-    "publish-pkg:next": "pnpm publish --access public --no-git-checks --provenance=false --tag next",
-    "publish-pkg:test": "pnpm publish --access public --no-git-checks --provenance=false --dry-run",
+    "publish-pkg": "pnpm publish --access public --no-git-checks --provenance",
+    "publish-pkg:next": "pnpm publish --access public --no-git-checks --provenance --tag next",
+    "publish-pkg:test": "pnpm publish --access public --no-git-checks --provenance --dry-run",
     "format": "prettier . --write --cache --ignore-unknown",
     "format:check": "prettier . --check --ignore-unknown",
     "lint": "eslint .",

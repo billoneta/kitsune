@@ -85,3 +85,5 @@ function releaseConfig(options: ReleaseConfigOptions = {}): Options {
 }
 
 export default releaseConfig;
+
+export { ReleaseConfigOptions };

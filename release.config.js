@@ -1,5 +1,5 @@
-// @ts-expect-error
-import releaseConfig from '@billoneta/config/release-config';
+// @ts-check
+import defineConfig from '@billoneta/config/release-config';
 
-/** @type {import('semantic-release').Options} */
-export default releaseConfig();
+/** @type {import('@billoneta/config/release-config').ReleaseConfigOptions} */
+export default defineConfig();

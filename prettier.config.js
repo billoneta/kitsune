@@ -1,4 +1,4 @@
-// @ts-expect-error
+// @ts-check
 import prettierConfig from '@billoneta/config/prettier-config';
 
 /** @type {import("prettier").Options} */
