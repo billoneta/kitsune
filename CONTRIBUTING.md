@@ -109,13 +109,13 @@ git push origin feature/your-feature-name
 > [!NOTE]
 > Replace `feature/your-feature-name` with the name of your branch created earlier in **[step 3](#3--create-a-new-branch-for-your-feature-or-bugfix)**
 
-### 6. 📩 Create a Pull Request
+### 6. 🧩 Create a Pull Request
 
 Once your code is ready, **go to your forked repository on GitHub and click the "Compare & pull request" button** to open a Pull Request (PR) from your feature branch to the main repository.
 
 Your Pull Request should be clear, descriptive, and follow the required structure. This helps maintainers review your work efficiently and increases the chances of your contribution being accepted.
 
-For full details on what your PR should include, please refer to the [Pull Request Template](.github/pull_request.md).
+For full details on what your PR should include, please refer to the [Pull Request Template](.github/pull_request_template.md).
 
 > [!IMPORTANT]
 > Before submitting your PR:
@@ -151,8 +151,8 @@ Stick to the project's formatting rules. Tools like Prettier and ESLint are conf
 
 > [!NOTE]
 > **Before pushing your code.**
-> - **To lint your code, use the following command: `pnpm run lint:fix`**
-> - **To format your code, use the following command: `pnpm run format`**
+> - **To tidy up your code, run:** `pnpm run lint:fix`  
+> - **To give your code a makeover, run:** `pnpm run format`  
 
 ### 3. 👓 Prioritize code readability
 
