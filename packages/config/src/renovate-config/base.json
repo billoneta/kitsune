@@ -68,7 +68,7 @@
   }
  ],
 
- "schedule": ["after 10pm every weekday", "before 5am every weekday", "every weekend"],
+ "schedule": [],
 
  "rebaseWhen": "conflicted",
  "platformAutomerge": true
