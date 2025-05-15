@@ -13,7 +13,7 @@ importers:
         version: link:packages/config
       '@billoneta/gitmoji':
         specifier: ^1.0.0
-        version: 1.0.3(typescript@5.8.3)
+        version: 1.0.4(typescript@5.8.3)
       '@billoneta/utils':
         specifier: workspace:*
         version: link:packages/utils
@@ -56,7 +56,7 @@ importers:
     dependencies:
       '@billoneta/gitmoji':
         specifier: ^1.0.0
-        version: 1.0.3(typescript@5.8.3)
+        version: 1.0.4(typescript@5.8.3)
       '@eslint-react/eslint-plugin':
         specifier: 1.49.0
         version: 1.49.0(eslint@9.26.0(jiti@2.4.2))(ts-api-utils@2.1.0(typescript@5.8.3))(typescript@5.8.3)
@@ -291,8 +291,8 @@ packages:
     resolution: {integrity: sha512-+EzkxvLNfiUeKMgy/3luqfsCWFRXLb7U6wNQTk60tovuckwB15B191tJWvpp4HjiQWdJkCxO3Wbvc6jlk3Xb2Q==}
     engines: {node: '>=6.9.0'}
 
-  '@billoneta/gitmoji@1.0.3':
-    resolution: {integrity: sha512-ElYK9il5HeEmYJQHxdYZ4zpYm6g/t27JU8bEK3dN3V3uhUVeMzfGMMO4webwH/kIxThDldHcLxA5Ekp94HyV7A==}
+  '@billoneta/gitmoji@1.0.4':
+    resolution: {integrity: sha512-Dl50XCSx9Ovam9OOt4hzbVGbTAgw+bGfXUNajccqkvUAhlhut95qoaj4EDWbPWFAhj7wsJEYgnqp4kbTxJgF3Q==}
 
   '@colors/colors@1.5.0':
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
@@ -3829,7 +3829,7 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@billoneta/gitmoji@1.0.3(typescript@5.8.3)':
+  '@billoneta/gitmoji@1.0.4(typescript@5.8.3)':
     dependencies:
       '@commitlint/format': 19.8.1
       chalk: 5.4.1
