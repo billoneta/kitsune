@@ -13,7 +13,7 @@ importers:
         version: link:packages/config
       '@billoneta/gitmoji':
         specifier: ^1.0.0
-        version: 1.0.2(typescript@5.8.3)
+        version: 1.0.3(typescript@5.8.3)
       '@billoneta/utils':
         specifier: workspace:*
         version: link:packages/utils
@@ -290,10 +290,7 @@ packages:
   '@babel/types@7.27.1':
     resolution: {integrity: sha512-+EzkxvLNfiUeKMgy/3luqfsCWFRXLb7U6wNQTk60tovuckwB15B191tJWvpp4HjiQWdJkCxO3Wbvc6jlk3Xb2Q==}
     engines: {node: '>=6.9.0'}
-
-  '@billoneta/gitmoji@1.0.2':
-    resolution: {integrity: sha512-iM/O+5yXqgtUyvXmSEHShXgN+fKH0C53ViqgiJFXrwVBRu+xDEx7ROvp24oN1KR47kGwLus13Dsj1RXiGeM6Xw==}
-
+    
   '@billoneta/gitmoji@1.0.3':
     resolution: {integrity: sha512-ElYK9il5HeEmYJQHxdYZ4zpYm6g/t27JU8bEK3dN3V3uhUVeMzfGMMO4webwH/kIxThDldHcLxA5Ekp94HyV7A==}
 
@@ -3894,19 +3891,6 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
-
-  '@billoneta/gitmoji@1.0.2(typescript@5.8.3)':
-    dependencies:
-      '@commitlint/format': 19.8.1
-      chalk: 5.4.1
-      cosmiconfig: 9.0.0(typescript@5.8.3)
-      emoji-regex: 10.4.0
-      gitmojis: 3.15.0
-      lodash: 4.17.21
-      pangu: 4.0.7
-      sync-fetch: 0.6.0-2
-    transitivePeerDependencies:
-      - typescript
 
   '@billoneta/gitmoji@1.0.3(typescript@5.8.3)':
     dependencies:
