@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
  release:
-  name: Auto Release
+  name: Release Actions
   runs-on: ubuntu-latest
   permissions:
    contents: write # Allows writing to the repository (necessary for pushing tags and changes)
