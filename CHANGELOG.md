@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.10`](https://github.com/billoneta/kitsune/compare/v1.1.9...v1.1.10)
+🗓️ **Released:** `2025-05-15`
+
+#### 🐛 Bug Fixes
+
+Update renovate configuration to extend from the correct base path.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Resolved bugs and issues
+
+* Update renovate configuration to extend from the correct base path ([62335c8](https://github.com/billoneta/kitsune/commit/62335c8))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.9`](https://github.com/billoneta/kitsune/compare/v1.1.8...v1.1.9)
 🗓️ **Released:** `2025-05-15`
 
