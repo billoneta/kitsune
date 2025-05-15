@@ -30,7 +30,7 @@ jobs:
      uses: actions/setup-node@v4
      with:
       node-version: ${{ matrix.node }}
-      registry-url: 'https://npm.pkg.github.com'
+      always-auth: true
       cache: 'pnpm'
 
    - name: Install dependencies
@@ -43,5 +43,6 @@ jobs:
      env:
       NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
      run: |
+      npm config set registry https://npm.pkg.github.com
       npm set //npm.pkg.github.com/:_authToken ${{ secrets.GH_TOKEN }}
       pnpm publish --filter "./packages/*" --access public --no-git-checks --provenance
