@@ -1,4 +1,4 @@
-import eslintConfig from '@k4i/config/eslint-config';
+import eslintConfig from '@billoneta/config/eslint-config';
 import { defineConfig, globalIgnores } from 'eslint/config';
 
 export default defineConfig([

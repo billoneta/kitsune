@@ -1,4 +1,4 @@
-import _commitTypes from '@k4i/gitmoji/commit-types';
+import _commitTypes from '@billoneta/gitmoji/commit-types';
 import type { PluginSpec } from 'semantic-release';
 import type { CommitAnalyzerPluginOptions } from '@/release-config/types';
 
@@ -41,7 +41,7 @@ export const commitAnalyzerPlugin = (options: CommitAnalyzerPluginOptions = {}):
     { type: 'wip', release: false },
     { type: 'revert', release: false },
    ],
-   config: config ?? '@k4i/gitmoji/changelog-config',
+   config: config ?? '@billoneta/gitmoji/changelog-config',
    ...customized,
   },
  ];

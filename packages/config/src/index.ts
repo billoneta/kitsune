@@ -17,13 +17,13 @@ import releaseConfig from '@/release-config';
  *
  * @example Changelog
  * // Default configurations:
- * const { changelog } = require('@k4i/config'); // <- already has a good default setting
+ * const { changelog } = require('@billoneta/config'); // <- already has a good default setting
  * // Changelog usage (in changelog.config.js)
  * export default Changelog;
  *
  * @example Commitlint
  * // Extending configurations:
- * const { commitlint } = require('@k4i/config'); // <- already has a good default setting
+ * const { commitlint } = require('@billoneta/config'); // <- already has a good default setting
  * // Commitlint usage (in commitlint.config.js)
  * export default {
  *   ...commitlint,
@@ -35,7 +35,7 @@ import releaseConfig from '@/release-config';
  *
  * @example Eslint & Prettier
  * // Using individual configurations:
- * import { eslint, prettier } from '@k4i/config'; // <- already has a good default setting
+ * import { eslint, prettier } from '@billoneta/config'; // <- already has a good default setting
  *
  * // ESLint usage (in eslint.config.js)
  * import { defineConfig } from 'eslint/config';
@@ -58,7 +58,7 @@ import releaseConfig from '@/release-config';
  *
  * @example Semantic release
  * // Using in build scripts:
- * const { release } = require('@k4i/config'); // <- already has a good default setting
+ * const { release } = require('@billoneta/config'); // <- already has a good default setting
  * // Semantic release usage (in release.config.js)
  * module.exports = release();
  */

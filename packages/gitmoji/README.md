@@ -1,1 +1,1 @@
-# @k4i/gitmoji
+# @billoneta/gitmoji

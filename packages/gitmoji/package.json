@@ -1,7 +1,7 @@
 {
-  "name": "@k4i/gitmoji",
+  "name": "@billoneta/gitmoji",
   "description": "🧱 My customized Gitmoji Config - a fork of https://github.com/arvinxx/gitmoji-commit-workflow - just with several bug fixes and a cleaner look.",
-  "version": "5.0.1",
+  "version": "1.0.0",
   "type": "module",
   "exports": {
     ".": {
@@ -54,7 +54,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/k4itrun/kitsune.git"
+    "url": "git+https://github.com/billoneta/kitsune.git"
   },
   "files": [
     "dist",
@@ -68,10 +68,10 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/k4itrun/kitsune/issues"
+    "url": "https://github.com/billoneta/kitsune/issues"
   },
   "funding": "https://github.com/sponsors/k4itrun",
-  "homepage": "https://github.com/k4itrun/kitsune#readme",
+  "homepage": "https://github.com/billoneta/kitsune#readme",
   "dependencies": {
     "@commitlint/format": "^19.8.1",
     "chalk": "^5.4.1",

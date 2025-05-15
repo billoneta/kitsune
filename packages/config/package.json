@@ -1,7 +1,7 @@
 {
-  "name": "@k4i/config",
+  "name": "@billoneta/config",
   "description": "🧱 My customized Config of Linters and Semantic release and others.",
-  "version": "5.0.1",
+  "version": "1.0.0",
   "type": "module",
   "exports": {
     ".": {
@@ -72,7 +72,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/k4itrun/kitsune.git"
+    "url": "git+https://github.com/billoneta/kitsune.git"
   },
   "files": [
     "dist",
@@ -86,17 +86,17 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/k4itrun/kitsune/issues"
+    "url": "https://github.com/billoneta/kitsune/issues"
   },
   "funding": "https://github.com/sponsors/k4itrun",
-  "homepage": "https://github.com/k4itrun/kitsune#readme",
+  "homepage": "https://github.com/billoneta/kitsune#readme",
   "dependencies": {
+    "@billoneta/gitmoji": "^1.0.0",
     "@eslint-react/eslint-plugin": "1.49.0",
     "@eslint/compat": "1.2.9",
     "@eslint/eslintrc": "3.3.1",
     "@eslint/js": "9.26.0",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
-    "@k4i/gitmoji": "^5.0.0",
     "@next/eslint-plugin-next": "15.3.2",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.1",

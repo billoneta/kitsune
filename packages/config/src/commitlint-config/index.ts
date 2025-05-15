@@ -7,7 +7,7 @@ import type { UserConfig } from '@commitlint/types';
  *
  * @example
  * // Basic usage in commitlint.config.js:
- * import commitlintConfig from '@k4i/config/commitlint-config';
+ * import commitlintConfig from '@billoneta/config/commitlint-config';
  * export default commitlintConfig; // <- already has a good default setting.
  *
  * @example
@@ -31,7 +31,7 @@ import type { UserConfig } from '@commitlint/types';
  */
 
 const commitlintConfig: UserConfig = {
- extends: ['@k4i/gitmoji/commitlint-config'],
+ extends: ['@billoneta/gitmoji/commitlint-config'],
 } satisfies UserConfig;
 
 export default commitlintConfig;

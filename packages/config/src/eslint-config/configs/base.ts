@@ -7,10 +7,10 @@ import globals from 'globals';
 
 export default [
  gitignore({
-  name: '@k4i/config/eslint-config/gitignore',
+  name: '@billoneta/config/eslint-config/gitignore',
  }),
  {
-  name: '@k4i/config/eslint-config/base',
+  name: '@billoneta/config/eslint-config/base',
   files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx', '**/*.mjs'],
   ...js.configs.recommended,
   languageOptions: {
@@ -103,7 +103,7 @@ export default [
   },
  },
  {
-  name: '@k4i/config/eslint-config/base/import',
+  name: '@billoneta/config/eslint-config/base/import',
   plugins: {
    'import-x': importPluginX,
   },
@@ -123,7 +123,7 @@ export default [
   },
  },
  {
-  name: '@k4i/config/eslint-config/base/stylistic',
+  name: '@billoneta/config/eslint-config/base/stylistic',
   plugins: {
    '@stylistic': stylistic,
   },

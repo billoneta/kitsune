@@ -1,7 +1,7 @@
 {
-  "name": "@k4i/utils",
+  "name": "@billoneta/utils",
   "description": "🧱 My customized Utilities for any project.",
-  "version": "5.0.1",
+  "version": "1.0.0",
   "type": "module",
   "exports": {
     ".": {
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/k4itrun/kitsune.git"
+    "url": "git+https://github.com/billoneta/kitsune.git"
   },
   "files": [
     "dist",
@@ -40,10 +40,10 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/k4itrun/kitsune/issues"
+    "url": "https://github.com/billoneta/kitsune/issues"
   },
   "funding": "https://github.com/sponsors/k4itrun",
-  "homepage": "https://github.com/k4itrun/kitsune#readme",
+  "homepage": "https://github.com/billoneta/kitsune#readme",
   "dependencies": {
     "chalk": "^5.4.1",
     "glob": "^11.0.2",

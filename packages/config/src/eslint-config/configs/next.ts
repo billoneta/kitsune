@@ -10,7 +10,7 @@ const compat = new FlatCompat({
 
 const mergedConfigs = mergeConfigs(
  {
-  name: '@k4i/config/eslint-config/next',
+  name: '@billoneta/config/eslint-config/next',
   files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
   ignores: ['.next/'],
   languageOptions: {

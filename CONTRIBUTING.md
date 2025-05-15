@@ -1,5 +1,5 @@
 <div align="center">
-   <h1>🧱 Contributing to <a href='https://github.com/k4itrun/kitsune'>kitsune</a> </h1>
+   <h1>🧱 Contributing to <a href='https://github.com/billoneta/kitsune'>kitsune</a> </h1>
    <p>✨ Thank you for your interest in contributing to this project!</p>
 </div>
 
@@ -24,7 +24,7 @@
 
 1. **Fork the repository and clone your fork.**
 
-![Forking repository on Github](https://github.com/k4itrun/k4itrun/assets/103044629/4a071850-2a75-4fcb-94dd-046753c6b267)
+![Forking repository on Github](https://github.com/billoneta/k4itrun/assets/103044629/4a071850-2a75-4fcb-94dd-046753c6b267)
 
 2. **Create a new branch for your feature or bugfix:**
 ```bash

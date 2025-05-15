@@ -6,7 +6,7 @@ const mergedTypescriptConfig = mergeConfigs(...(tseslint.config(tseslint.configs
 
 export default (await composer(mergedTypescriptConfig)
  .override('typescript-eslint/eslint-recommended', {
-  name: '@k4i/config/eslint-config/typescript',
+  name: '@billoneta/config/eslint-config/typescript',
  })
  .overrideRules({
   '@typescript-eslint/no-unused-vars': [

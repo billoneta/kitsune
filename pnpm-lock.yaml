@@ -8,10 +8,10 @@ importers:
 
   .:
     dependencies:
-      '@k4i/gitmoji':
-        specifier: ^5.0.0
-        version: 5.0.0(typescript@5.8.3)
-      '@k4i/utils':
+      '@billoneta/gitmoji':
+        specifier: ^1.0.0
+        version: 1.0.0(typescript@5.8.3)
+      '@billoneta/utils':
         specifier: workspace:*
         version: link:packages/utils
       markdown-table:
@@ -21,15 +21,15 @@ importers:
         specifier: 2.5.3
         version: 2.5.3
     devDependencies:
+      '@billoneta/config':
+        specifier: workspace:*
+        version: link:packages/config
       '@commitlint/cli':
         specifier: ^19.8.1
         version: 19.8.1(@types/node@22.15.17)(typescript@5.8.3)
       '@commitlint/types':
         specifier: ^19.8.1
         version: 19.8.1
-      '@k4i/config':
-        specifier: workspace:*
-        version: link:packages/config
       '@types/node':
         specifier: 22.15.17
         version: 22.15.17
@@ -54,6 +54,9 @@ importers:
 
   packages/config:
     dependencies:
+      '@billoneta/gitmoji':
+        specifier: ^1.0.0
+        version: 1.0.0(typescript@5.8.3)
       '@eslint-react/eslint-plugin':
         specifier: 1.49.0
         version: 1.49.0(eslint@9.26.0(jiti@2.4.2))(ts-api-utils@2.1.0(typescript@5.8.3))(typescript@5.8.3)
@@ -69,9 +72,6 @@ importers:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^4.4.1
         version: 4.4.1(prettier@3.5.3)
-      '@k4i/gitmoji':
-        specifier: ^5.0.0
-        version: 5.0.0(typescript@5.8.3)
       '@next/eslint-plugin-next':
         specifier: 15.3.2
         version: 15.3.2
@@ -290,6 +290,9 @@ packages:
   '@babel/types@7.27.1':
     resolution: {integrity: sha512-+EzkxvLNfiUeKMgy/3luqfsCWFRXLb7U6wNQTk60tovuckwB15B191tJWvpp4HjiQWdJkCxO3Wbvc6jlk3Xb2Q==}
     engines: {node: '>=6.9.0'}
+
+  '@billoneta/gitmoji@1.0.0':
+    resolution: {integrity: sha512-a52elN37wYQEAqAeHYB4pecYTm6sp7FY8GuR/LBxKJcfnoTxEAKGO7dAHn/junD9e+f4PlIMWswEJvzFBXzWtA==}
 
   '@colors/colors@1.5.0':
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
@@ -650,9 +653,6 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
-
-  '@k4i/gitmoji@5.0.0':
-    resolution: {integrity: sha512-INdaYQ1hufqUjXwB1+FumuX4Ah3oXjYM331EjYH48Pe8KaitxqYxPLzmnkpsfQul25Mi0KC3ya0BmG0Q8rLIbg==}
 
   '@modelcontextprotocol/sdk@1.11.1':
     resolution: {integrity: sha512-9LfmxKTb1v+vUS1/emSk1f5ePmTLkb9Le9AxOB5T0XM59EUumwcS45z05h7aiZx3GI0Bl7mjb3FMEglYj+acuQ==}
@@ -3860,6 +3860,19 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
+  '@billoneta/gitmoji@1.0.0(typescript@5.8.3)':
+    dependencies:
+      '@commitlint/format': 19.8.1
+      chalk: 5.4.1
+      cosmiconfig: 9.0.0(typescript@5.8.3)
+      emoji-regex: 10.4.0
+      gitmojis: 3.15.0
+      lodash: 4.17.21
+      pangu: 4.0.7
+      sync-fetch: 0.6.0-2
+    transitivePeerDependencies:
+      - typescript
+
   '@colors/colors@1.5.0':
     optional: true
 
@@ -4248,19 +4261,6 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
-
-  '@k4i/gitmoji@5.0.0(typescript@5.8.3)':
-    dependencies:
-      '@commitlint/format': 19.8.1
-      chalk: 5.4.1
-      cosmiconfig: 9.0.0(typescript@5.8.3)
-      emoji-regex: 10.4.0
-      gitmojis: 3.15.0
-      lodash: 4.17.21
-      pangu: 4.0.7
-      sync-fetch: 0.6.0-2
-    transitivePeerDependencies:
-      - typescript
 
   '@modelcontextprotocol/sdk@1.11.1':
     dependencies:

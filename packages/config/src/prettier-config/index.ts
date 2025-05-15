@@ -9,7 +9,7 @@ import * as prettierPluginTailwindcss from 'prettier-plugin-tailwindcss';
  *
  * @example
  * // Basic usage in prettier.config.js:
- * import prettierConfig from '@k4i/config/prettier-config';
+ * import prettierConfig from '@billoneta/config/prettier-config';
  * export default prettierConfig; // <- already has a good default setting.
  *
  * @example

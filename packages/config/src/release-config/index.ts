@@ -9,7 +9,7 @@ import type { ReleaseConfigOptions } from '@/release-config/types';
  *
  * @example
  * // Basic usage in release.config.js:
- * import releaseConfig from '@k4i/config/release-config';
+ * import releaseConfig from '@billoneta/config/release-config';
  * export default releaseConfig(); // <- already has a good default setting.
  *
  * @example

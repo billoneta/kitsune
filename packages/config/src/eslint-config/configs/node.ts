@@ -4,7 +4,7 @@ import eslintPluginNodeRecmmended from 'eslint-plugin-n';
 
 export default (await composer({
  ...eslintPluginNodeRecmmended.configs['flat/recommended-script'],
- name: '@k4i/config/eslint-config/node',
+ name: '@billoneta/config/eslint-config/node',
  languageOptions: {
   parserOptions: {
    sourceType: 'module',

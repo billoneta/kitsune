@@ -6,7 +6,7 @@ import globals from 'globals';
 
 const mergedReactConfig = [
  {
-  name: '@k4i/config/eslint-config/react/base',
+  name: '@billoneta/config/eslint-config/react/base',
   files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
   ...(eslintReact.configs['recommended-typescript'] as unknown as Linter.Config[]),
   languageOptions: {
@@ -22,7 +22,7 @@ const mergedReactConfig = [
   },
  },
  {
-  name: '@k4i/config/eslint-config/react/a11y',
+  name: '@billoneta/config/eslint-config/react/a11y',
   plugins: {
    'jsx-a11y': jsxa11y,
   },
@@ -48,10 +48,10 @@ export default (await composer(mergedReactConfig)
   'jsx-a11y/no-static-element-interactions': 'off',
  })
  .override('jsx-a11y/recommended', {
-  name: '@k4i/config/eslint-config/react/a11y',
+  name: '@billoneta/config/eslint-config/react/a11y',
  })
  .override('@eslint-react/recommended-typescript', {
-  name: '@k4i/config/eslint-config/react/recommended',
+  name: '@billoneta/config/eslint-config/react/recommended',
  })
  .renamePlugins({
   'jsx-a11y': 'react-a11y',

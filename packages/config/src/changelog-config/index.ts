@@ -1,5 +1,5 @@
-import type { Config } from '@k4i/gitmoji/changelog-config/types';
-import displayCommitTypes from '@k4i/gitmoji/commit-types';
+import type { Config } from '@billoneta/gitmoji/changelog-config/types';
+import displayCommitTypes from '@billoneta/gitmoji/commit-types';
 
 /**
  * Changelog Configuration Example
@@ -8,7 +8,7 @@ import displayCommitTypes from '@k4i/gitmoji/commit-types';
  *
  * @example
  * // Basic usage in changelog.config.js:
- * import changelogConfig from '@k4i/config/changelog-config';
+ * import changelogConfig from '@billoneta/config/changelog-config';
  * export default changelogConfig; // <- already has a good default setting.
  *
  * @example

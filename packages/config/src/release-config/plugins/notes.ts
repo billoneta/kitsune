@@ -18,7 +18,7 @@ export const releaseNotesGeneratorPlugin = (options: ReleaseNotesGeneratorPlugin
  return [
   '@semantic-release/release-notes-generator',
   {
-   config: config ?? '@k4i/gitmoji/changelog-config',
+   config: config ?? '@billoneta/gitmoji/changelog-config',
    ...customized,
   },
  ];
