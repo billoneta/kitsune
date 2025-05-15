@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.11`](https://github.com/billoneta/kitsune/compare/v1.1.10...v1.1.11)
+🗓️ **Released:** `2025-05-15`
+
+#### 🐛 Bug Fixes
+
+Update package versions to 1.0.3 and adjust lefthook configuration.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Resolved bugs and issues
+
+* Update package versions to 1.0.3 and adjust lefthook configuration ([486fbe7](https://github.com/billoneta/kitsune/commit/486fbe7))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.10`](https://github.com/billoneta/kitsune/compare/v1.1.9...v1.1.10)
 🗓️ **Released:** `2025-05-15`
 
