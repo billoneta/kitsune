@@ -1,8 +1,8 @@
 {
  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
- "extends": ["config:base", ":dependencyDashboard", ":semanticCommits", ":semanticCommitTypeAll(chore)", ":rebaseStalePrs"],
+ "extends": ["config:base", ":semanticCommits", ":semanticCommitTypeAll(chore)", ":rebaseStalePrs"],
  "dependencyDashboard": false,
- "dependencyDashboardTitle": "Dependency Updates Dashboard",
+
  "labels": ["dependencies"],
  "assignees": ["k4itrun"],
  "reviewers": ["k4itrun"],
@@ -71,5 +71,7 @@
  "schedule": [],
 
  "rebaseWhen": "conflicted",
+ "automergeStrategy": "auto",
+ "automerge": true,
  "platformAutomerge": true
 }
