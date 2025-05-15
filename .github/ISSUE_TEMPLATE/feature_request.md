@@ -1,25 +1,19 @@
-## Feature Request
-
-### Is your feature request related to a problem? Please describe.
-
-A clear and concise description of the problem you're facing and why this feature is needed. Example: "I'm frustrated when..."
-
-### Describe the solution you'd like
-
-A clear and concise description of what you want to happen. Include specific details about how you envision the feature working.
-
-### Describe alternatives you've considered
-
-Any alternative solutions or features you've thought about that could solve the problem, including reasons for rejection or acceptance.
-
-### Additional context
-
-Add any other context, screenshots, designs, or notes about the feature request here.
-
+---
+name: Feature Request
+about: Pitch us your bright idea for this project
+title: ''
+labels: ''
+assignees: ''
 ---
 
-### Checklist
+### Is your idea born from a problem? Tell us!
+Give us a quick rundown of the headache you’re trying to fix. Example: “I get annoyed when [...]”
 
-- [ ] I have searched the existing feature requests and did not find a similar one.
-- [ ] This feature is important for improving user experience or performance.
-- [ ] I am willing to contribute this feature (if applicable).
+### What’s your brilliant solution?
+Spell out clearly what you want to see happen instead.
+
+### Tried anything else?
+List any other fixes or features you’ve thought about — we love alternatives!
+
+### Extra details
+Drop any other context, mockups, or screenshots that’ll help us get your vision.
