@@ -140,9 +140,6 @@
     "access": "public",
     "provenance": true
   },
-  "renovate-config": {
-    "default": "./dist/renovate-config/base.json"
-  },
   "types": "./dist/index.d.ts",
   "typesVersions": {
     "*": {
