@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.15`](https://github.com/billoneta/kitsune/compare/v1.1.14...v1.1.15)
+🗓️ **Released:** `2025-05-16`
+
+#### 🔧 Chores
+
+update package versions to 1.0.5 and adjust renovate configuration.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Other tasks and maintenance
+
+* Update package versions to 1.0.5 and adjust renovate configuration ([bc475ce](https://github.com/billoneta/kitsune/commit/bc475ce))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.14`](https://github.com/billoneta/kitsune/compare/v1.1.13...v1.1.14)
 🗓️ **Released:** `2025-05-16`
 
