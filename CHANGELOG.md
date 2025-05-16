@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.18`](https://github.com/billoneta/kitsune/compare/v1.1.17...v1.1.18)
+🗓️ **Released:** `2025-05-16`
+
+#### 🔧 Chores
+
+Update Renovate configuration to use the correct extends path.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Other tasks and maintenance
+
+* Update Renovate configuration to use the correct extends path ([cf53648](https://github.com/billoneta/kitsune/commit/cf53648))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.17`](https://github.com/billoneta/kitsune/compare/v1.1.16...v1.1.17)
 🗓️ **Released:** `2025-05-16`
 
