@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.16`](https://github.com/billoneta/kitsune/compare/v1.1.15...v1.1.16)
+🗓️ **Released:** `2025-05-16`
+
+#### 🔧 Chores
+
+fix extends syntax in renovate configuration.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Other tasks and maintenance
+
+* Fix extends syntax in renovate configuration ([f84b6b4](https://github.com/billoneta/kitsune/commit/f84b6b4))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.15`](https://github.com/billoneta/kitsune/compare/v1.1.14...v1.1.15)
 🗓️ **Released:** `2025-05-16`
 
