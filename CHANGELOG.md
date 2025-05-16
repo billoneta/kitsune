@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.19`](https://github.com/billoneta/kitsune/compare/v1.1.18...v1.1.19)
+🗓️ **Released:** `2025-05-16`
+
+#### 🔧 Chores
+
+Correct the extension path in Renovate settings.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Other tasks and maintenance
+
+* Correct the extension path in Renovate settings ([f18ad6b](https://github.com/billoneta/kitsune/commit/f18ad6b))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.18`](https://github.com/billoneta/kitsune/compare/v1.1.17...v1.1.18)
 🗓️ **Released:** `2025-05-16`
 
