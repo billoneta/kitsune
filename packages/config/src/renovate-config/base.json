@@ -1,77 +1,48 @@
 {
  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
- "extends": ["config:base", ":semanticCommits", ":semanticCommitTypeAll(chore)", ":rebaseStalePrs"],
- "dependencyDashboard": false,
 
+ "extends": ["config:base", ":semanticCommits", ":semanticCommitTypeAll(chore)"],
+
+ "prHourlyLimit": 0,
+ "prConcurrentLimit": 0,
+
+ "semanticCommitScope": "deps",
+
+ "automerge": true,
+ "platformAutomerge": true,
+ "automergeStrategy": "auto",
+ "rebaseWhen": "conflicted",
+
+ "prFooter": "",
+ "prBodyTemplate": "{{{table}}}{{{warnings}}}{{{notes}}}{{{changelogs}}}{{{controls}}}{{{footer}}}",
+
+ "dependencyDashboard": false,
  "labels": ["dependencies"],
  "assignees": ["k4itrun"],
  "reviewers": ["k4itrun"],
- "timezone": "America/Los_Angeles",
-
- "prCreation": "immediate",
- "prHourlyLimit": 2,
- "prConcurrentLimit": 10,
- "branchConcurrentLimit": 10,
-
- "lockFileMaintenance": {
-  "enabled": true,
-  "automerge": true,
-  "schedule": ["before 5am on monday"]
- },
-
- "semanticCommitScope": "deps",
- "prBodyTemplate": "{{{table}}}{{{changelogs}}}{{{warnings}}}{{{notes}}}{{{controls}}}",
- "commitBodyTable": true,
- "prFooter": "",
 
  "packageRules": [
   {
-   "matchPackagePatterns": ["@udecode/plate*"],
-   "groupName": "Plate Editor",
-   "automerge": false
+   "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies", "optionalDependencies"]
+  },
+  {
+   "matchPackagePatterns": [".*"]
+  },
+  {
+   "matchPaths": ["+(package.json)", "**/package.json"],
+   "labels": ["dependencies"]
+  },
+  {
+   "matchPackagePatterns": ["@udecode"],
+   "groupName": "@udecode/plate"
   },
   {
    "matchPackagePatterns": ["contentlayer"],
-   "groupName": "Contentlayer",
-   "automerge": false
+   "groupName": "contentlayer"
   },
   {
-   "matchPackageNames": ["eslint", "prettier", "typescript", "vitest", "jest"],
-   "groupName": "Tooling",
-   "automerge": true,
-   "automergeType": "branch"
-  },
-  {
-   "matchPackagePatterns": ["react", "react-dom", "next"],
-   "groupName": "React Core",
-   "automerge": false
-  },
-  {
-   "matchDepTypes": ["devDependencies"],
-   "matchUpdateTypes": ["minor", "patch"],
-   "automerge": true,
-   "automergeType": "branch"
-  },
-  {
-   "matchUpdateTypes": ["major"],
-   "groupName": "Major Upgrades",
-   "schedule": ["on saturday", "on sunday"]
-  },
-  {
-   "matchDepTypes": ["peerDependencies", "engines"],
-   "rangeStrategy": "pin"
-  },
-  {
-   "matchPaths": ["packages/**"],
-   "groupName": "Monorepo Packages",
-   "automerge": false
+   "matchPackageNames": ["eslint", "prettier", "lefthook", "typescript", "vitest", "jest"],
+   "groupName": "linters"
   }
- ],
-
- "schedule": [],
-
- "rebaseWhen": "conflicted",
- "automergeStrategy": "auto",
- "automerge": true,
- "platformAutomerge": true
+ ]
 }
