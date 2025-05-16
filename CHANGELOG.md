@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.14`](https://github.com/billoneta/kitsune/compare/v1.1.13...v1.1.14)
+🗓️ **Released:** `2025-05-16`
+
+#### 🔧 Chores
+
+- **🎯 Deps**: Update @billoneta/gitmoji to v1.0.4 and lefthook to v1.11.13; upgrade tsup to v8.5.0.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Other tasks and maintenance
+
+* **🎯 Deps**: Update @billoneta/gitmoji to v1.0.4 and lefthook to v1.11.13; upgrade tsup to v8.5.0 ([67800d4](https://github.com/billoneta/kitsune/commit/67800d4))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.13`](https://github.com/billoneta/kitsune/compare/v1.1.12...v1.1.13)
 🗓️ **Released:** `2025-05-16`
 
