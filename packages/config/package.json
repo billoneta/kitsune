@@ -1,7 +1,7 @@
 {
   "name": "@billoneta/config",
   "description": "🧱 My customized Config of Linters and Semantic release and others.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "exports": {
     ".": {
@@ -139,6 +139,9 @@
   "publishConfig": {
     "access": "public",
     "provenance": true
+  },
+  "renovate-config": {
+    "default": "./dist/renovate-config/base.json"
   },
   "types": "./dist/index.d.ts",
   "typesVersions": {

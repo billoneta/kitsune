@@ -1,4 +1,4 @@
 {
  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
- "extends": ["github>billoneta/kitsune//packages/config/src/renovate-config/base.json"]
+ "extends": ["npm>@billoneta/config"]
 }
