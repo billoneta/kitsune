@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.13`](https://github.com/billoneta/kitsune/compare/v1.1.12...v1.1.13)
+🗓️ **Released:** `2025-05-16`
+
+#### 🐛 Bug Fixes
+
+Simplify renovate configuration by removing unnecessary fields and adjusting limits.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Resolved bugs and issues
+
+* Simplify renovate configuration by removing unnecessary fields and adjusting limits ([1ff8065](https://github.com/billoneta/kitsune/commit/1ff8065))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.12`](https://github.com/billoneta/kitsune/compare/v1.1.11...v1.1.12)
 🗓️ **Released:** `2025-05-15`
 
