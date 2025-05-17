@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.22`](https://github.com/billoneta/kitsune/compare/v1.1.21...v1.1.22)
+🗓️ **Released:** `2025-05-17`
+
+#### 📝 Documentation
+
+Add comments to ignore formatting in the notes section of the README.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Docs updates and improvements
+
+* Add comments to ignore formatting in the notes section of the README ([1b15b17](https://github.com/billoneta/kitsune/commit/1b15b17))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.21`](https://github.com/billoneta/kitsune/compare/v1.1.20...v1.1.21)
 🗓️ **Released:** `2025-05-17`
 
