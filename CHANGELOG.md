@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.23`](https://github.com/billoneta/kitsune/compare/v1.1.22...v1.1.23)
+🗓️ **Released:** `2025-05-17`
+
+#### 🔧 Chores
+
+Update .prettierignore files to include 'turbo*' and reorganize sections.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Other tasks and maintenance
+
+* Update .prettierignore files to include 'turbo*' and reorganize sections ([ea2713d](https://github.com/billoneta/kitsune/commit/ea2713d))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.22`](https://github.com/billoneta/kitsune/compare/v1.1.21...v1.1.22)
 🗓️ **Released:** `2025-05-17`
 
