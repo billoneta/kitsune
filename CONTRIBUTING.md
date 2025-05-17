@@ -150,10 +150,14 @@ This helps reviewers (and your future self) understand the purpose behind each c
 
 Stick to the project's formatting rules. Tools like Prettier and ESLint are configured to do most of the work for you.
 
-> [!NOTE] > **Before pushing your code.**
+<!-- prettier-ignore -->
+> [!NOTE] 
+> **Before pushing your code.**
 >
 > - **To tidy up your code, run:** `pnpm run lint:fix`
 > - **To give your code a makeover, run:** `pnpm run format`
+
+<!-- prettier-ignore-end -->
 
 ### 3. 👓 Prioritize code readability
 
