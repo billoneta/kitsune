@@ -1,5 +1,5 @@
-import type { PluginSpec } from 'semantic-release';
-import type { ReleaseNotesGeneratorPluginOptions } from '@/release-config/types';
+import type { PluginSpec } from "semantic-release";
+import type { ReleaseNotesGeneratorPluginOptions } from "@/release-config/types";
 
 /**
  * Configures the semantic-release release notes generator with Gitmoji support
@@ -16,9 +16,9 @@ export const releaseNotesGeneratorPlugin = (options: ReleaseNotesGeneratorPlugin
  const { config, ...customized } = options;
 
  return [
-  '@semantic-release/release-notes-generator',
+  "@semantic-release/release-notes-generator",
   {
-   config: config ?? '@billoneta/gitmoji/changelog-config',
+   config: config ?? "@billoneta/gitmoji/changelog-config",
    ...customized,
   },
  ];

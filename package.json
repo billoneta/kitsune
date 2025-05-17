@@ -38,7 +38,7 @@
   "homepage": "https://github.com/billoneta/kitsune#readme",
   "dependencies": {
     "@billoneta/config": "workspace:*",
-    "@billoneta/gitmoji": "^1.0.4",
+    "@billoneta/gitmoji": "^1.0.5",
     "@billoneta/utils": "workspace:*",
     "markdown-table": "3.0.4",
     "turbo": "2.5.3"
@@ -50,7 +50,7 @@
     "eslint": "9.27.0",
     "lefthook": "^1.11.13",
     "prettier": "3.5.3",
-    "semantic-release": "^24.2.3",
+    "semantic-release": "^24.2.4",
     "tsx": "4.19.4",
     "typescript": "^5.8.3"
   },

@@ -94,6 +94,7 @@ git pull upstream main
 
 > [!IMPORTANT]
 > Before submitting your work:
+>
 > - **All tests pass successfully.**
 > - **New tests are added if needed.**
 > - **Documentation is updated for new features or major changes.**
@@ -119,10 +120,10 @@ For full details on what your PR should include, please refer to the [Pull Reque
 
 > [!IMPORTANT]
 > Before submitting your PR:
+>
 > - Make sure your branch is up to date.
 > - Ensure your code is **[Formatted and Linted](#2--keep-formatting-clean-and-consistent)**
 > - Follow the **[Commit message format](#1--use-the-correct-commit-message-format-eg-feat-add-login-button)**
->
 > - Include all **Relevant Context** and **Testing evidence**. This will help project maintainers and other contributors better understand your changes, provide effective feedback, and significantly increase the chances of your code being accepted and merged smoothly.
 
 ---
@@ -135,11 +136,11 @@ Writing good code isn’t just about making it run—it’s about making it unde
 
 We adhere to the **[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)** specification alongside **[Gitmoji](https://gitmoji.dev/)** guidelines to include **meaningful emojis** in every commit. This **standardized approach** keeps our commit history **clean, consistent,** and ready for **automation tasks** like generating **changelogs** and managing **versioning**.
 
-
 > [!WARNING]
 > Your commit messages should clearly describe what your changes do and why.
 >
 > **Instead of writing vague messages like `Update File` or `Fix Stuff`.** use more meaningful ones like:
+>
 > - **`📝 docs: update README with local setup instructions`**
 > - **`🐛 fix(middleware): correct variable scope issue in auth middleware`**
 
@@ -149,17 +150,16 @@ This helps reviewers (and your future self) understand the purpose behind each c
 
 Stick to the project's formatting rules. Tools like Prettier and ESLint are configured to do most of the work for you.
 
-> [!NOTE]
-> **Before pushing your code.**
-> - **To tidy up your code, run:** `pnpm run lint:fix`  
-> - **To give your code a makeover, run:** `pnpm run format`  
+> [!NOTE] > **Before pushing your code.**
+>
+> - **To tidy up your code, run:** `pnpm run lint:fix`
+> - **To give your code a makeover, run:** `pnpm run format`
 
 ### 3. 👓 Prioritize code readability
 
 Code should be **easy to read and understand** without needing a decoder ring. Avoid **deeply nested logic**, **overly clever tricks**, or **cryptic variable names**.
 
 If a new developer (or your **sleep-deprived teammate**) can’t understand your code within **30 seconds**, it needs **simplification**.
-
 
 ### 4. 🧭 Follow the existing project style
 

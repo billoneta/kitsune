@@ -1,11 +1,11 @@
-import { readFileSync } from 'node:fs';
-import { sep } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { finalizeContext } from '@/changelog-config/context';
-import { transformer } from '@/changelog-config/handlers';
-import type { Config } from '@/changelog-config/types';
+import { readFileSync } from "node:fs";
+import { sep } from "node:path";
+import { fileURLToPath } from "node:url";
+import { finalizeContext } from "@/changelog-config/context";
+import { transformer } from "@/changelog-config/handlers";
+import type { Config } from "@/changelog-config/types";
 
-const dirname = fileURLToPath(new URL('.', import.meta.url));
+const dirname = fileURLToPath(new URL(".", import.meta.url));
 
 /**
  * Increases heading levels in a markdown template by one level if shouldReduce is true.
@@ -28,7 +28,7 @@ const reduceHeadingLevel = (skip: boolean, template: string): string => {
  * @returns {string} The content of the template file
  */
 const readTemplate = (name: string): string => {
- return readFileSync(`${dirname}${sep}templates${sep}${name}.hbs`, 'utf-8');
+ return readFileSync(`${dirname}${sep}templates${sep}${name}.hbs`, "utf-8");
 };
 
 /**
@@ -52,16 +52,16 @@ export default function createGitmojiWriterOpts(config: Config) {
   template,
  ] = [
   // prettier
-  readTemplate('author-avatar'),
-  readTemplate('author'),
-  readTemplate('back-to-top'),
-  readTemplate('commit'),
-  readTemplate('footer'),
-  readTemplate('header-newline-timestamp'),
-  readTemplate('header'),
-  readTemplate('summary-avatar'),
-  readTemplate('summary-template'),
-  readTemplate('template'),
+  readTemplate("author-avatar"),
+  readTemplate("author"),
+  readTemplate("back-to-top"),
+  readTemplate("commit"),
+  readTemplate("footer"),
+  readTemplate("header-newline-timestamp"),
+  readTemplate("header"),
+  readTemplate("summary-avatar"),
+  readTemplate("summary-template"),
+  readTemplate("template"),
  ];
 
  const shouldReduce = !config.reduceHeadingLevel;
@@ -69,7 +69,7 @@ export default function createGitmojiWriterOpts(config: Config) {
  const mainTemplate = () => {
   if (!config.showSummary) return template;
   if (config.showAuthor && config.showAuthorAvatar) return summaryTemplate.replace(/{{gitUserInfo}}/g, summaryAvatar);
-  return summaryTemplate.replace(/{{gitUserInfo}}/g, '');
+  return summaryTemplate.replace(/{{gitUserInfo}}/g, "");
  };
 
  const headerPartial = () => {
@@ -78,22 +78,22 @@ export default function createGitmojiWriterOpts(config: Config) {
  };
 
  const commitPartial = () => {
-  let gitUserInfo = '';
+  let gitUserInfo = "";
   if (config.showAuthor) gitUserInfo = config.showAuthorAvatar ? authorAvatar : author;
   return commit.replace(/{{gitUserInfo}}/g, gitUserInfo);
  };
 
  const footerPartial = () => {
   if (config.addBackToTop) return footer.replace(/{{backToTop}}/g, backToTop);
-  return footer.replace(/{{backToTop}}/g, '');
+  return footer.replace(/{{backToTop}}/g, "");
  };
 
  return {
   transform: transformer(config),
-  groupBy: 'type',
-  commitGroupsSort: 'title',
-  commitsSort: ['scope', 'subject'],
-  noteGroupsSort: 'title',
+  groupBy: "type",
+  commitGroupsSort: "title",
+  commitsSort: ["scope", "subject"],
+  noteGroupsSort: "title",
   mainTemplate: reduceHeadingLevel(shouldReduce, mainTemplate()),
   headerPartial: reduceHeadingLevel(shouldReduce, headerPartial()),
   commitPartial: reduceHeadingLevel(shouldReduce, commitPartial()),

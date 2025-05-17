@@ -1,6 +1,6 @@
-import type { LintOptions } from '@commitlint/types';
-import createGitmojiPlugin from '@/commitlint-config/plugin';
-import createGitmojiParserOpts from '@/parser';
+import type { LintOptions } from "@commitlint/types";
+import createGitmojiPlugin from "@/commitlint-config/plugin";
+import createGitmojiParserOpts from "@/parser";
 
 /**
  * Creates a commitlint preset with Gitmoji support

@@ -1,8 +1,8 @@
-import changelogConfig from '@/changelog-config';
-import commitlintConfig from '@/commitlint-config';
-import eslintConfig from '@/eslint-config';
-import prettierConfig from '@/prettier-config';
-import releaseConfig from '@/release-config';
+import changelogConfig from "@/changelog-config";
+import commitlintConfig from "@/commitlint-config";
+import eslintConfig from "@/eslint-config";
+import prettierConfig from "@/prettier-config";
+import releaseConfig from "@/release-config";
 
 /**
  * Unified Configuration Export

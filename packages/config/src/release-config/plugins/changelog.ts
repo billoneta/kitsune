@@ -1,6 +1,6 @@
-import dedent from 'dedent';
-import type { PluginSpec } from 'semantic-release';
-import type { ChangelogPluginOptions } from '@/release-config/types';
+import dedent from "dedent";
+import type { PluginSpec } from "semantic-release";
+import type { ChangelogPluginOptions } from "@/release-config/types";
 
 /**
  * Configures the `@semantic-release/changelog` plugin to generate or update the changelog file.
@@ -40,9 +40,9 @@ export const changelogPlugin = (options: ChangelogPluginOptions = {}): PluginSpe
  `);
 
  return [
-  '@semantic-release/changelog',
+  "@semantic-release/changelog",
   {
-   changelogFile: changelogFile ?? 'CHANGELOG.md',
+   changelogFile: changelogFile ?? "CHANGELOG.md",
    changelogTitle: changelogTitle ?? defaultChangelogTitle,
   },
  ];

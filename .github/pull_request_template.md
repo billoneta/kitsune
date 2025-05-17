@@ -1,5 +1,3 @@
-
-
 # Pull Request Template
 
 Thanks for contributing! Please complete the following checklist and fill in the details to help us review your PR faster.

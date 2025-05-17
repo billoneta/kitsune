@@ -1,8 +1,8 @@
-import changelogConfig from '@/changelog-config';
-import commitTypes from '@/commit-types';
-import commitlintConfig from '@/commitlint-config';
-import parser from '@/parser';
-import regexs from '@/regexs';
+import changelogConfig from "@/changelog-config";
+import commitTypes from "@/commit-types";
+import commitlintConfig from "@/commitlint-config";
+import parser from "@/parser";
+import regexs from "@/regexs";
 
 /**
  * Main configuration export aggregating all sub-configurations

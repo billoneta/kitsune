@@ -2,7 +2,7 @@ name: Publish Github
 
 on:
  workflow_run:
-  workflows: ['Release']
+  workflows: ["Release"]
   types: [completed]
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
   strategy:
    fail-fast: false
    matrix:
-    node: ['lts/*']
+    node: ["lts/*"]
   steps:
    - name: Checkout code
      uses: actions/checkout@v4
@@ -31,7 +31,7 @@ jobs:
      with:
       node-version: ${{ matrix.node }}
       always-auth: true
-      cache: 'pnpm'
+      cache: "pnpm"
 
    - name: Install dependencies
      run: pnpm install

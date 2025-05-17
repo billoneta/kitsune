@@ -1,5 +1,5 @@
-import eslintConfig from '@billoneta/config/eslint-config';
-import { defineConfig, globalIgnores } from 'eslint/config';
+import eslintConfig from "@billoneta/config/eslint-config";
+import { defineConfig, globalIgnores } from "eslint/config";
 
 export default defineConfig([
  // prettier
@@ -10,11 +10,11 @@ export default defineConfig([
  eslintConfig.turbo,
  eslintConfig.next,
  eslintConfig.react,
- globalIgnores(['packages/**/**/**/*.cjs'], 'Ignore any coomon js files'),
+ globalIgnores(["packages/**/**/**/*.cjs"], "Ignore any coomon js files"),
  {
-  name: 'Override',
+  name: "Override",
   rules: {
-   'require-await': 'off',
+   "require-await": "off",
   },
  },
 ]);

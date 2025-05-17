@@ -1,4 +1,4 @@
-import { CommitTypes } from '@/commit-types/types';
+import { CommitTypes } from "@/commit-types/types";
 
 /**
  * Default list of supported commit types
@@ -19,18 +19,18 @@ import { CommitTypes } from '@/commit-types/types';
  */
 const commitTypes: CommitTypes[] = [
  // prettier
- 'feat',
- 'fix',
- 'perf',
- 'refactor',
- 'chore',
- 'docs',
- 'build',
- 'ci',
- 'test',
- 'style',
- 'wip',
- 'revert',
+ "feat",
+ "fix",
+ "perf",
+ "refactor",
+ "chore",
+ "docs",
+ "build",
+ "ci",
+ "test",
+ "style",
+ "wip",
+ "revert",
 ];
 
 export default commitTypes;

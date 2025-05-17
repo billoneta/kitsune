@@ -1,5 +1,5 @@
-import emojiRegex from 'emoji-regex';
-import { gitmojis } from 'gitmojis';
+import emojiRegex from "emoji-regex";
+import { gitmojis } from "gitmojis";
 
 /**
  * Matches any standard Unicode emoji character.
@@ -24,7 +24,7 @@ export const gitmojiUnicodeRegex: RegExp = new RegExp(
  gitmojis
   .map((gitmoji) => gitmoji.emoji)
   .filter(Boolean)
-  .join('|')
+  .join("|")
 );
 
 export default {

@@ -1,4 +1,4 @@
-import { CommitTypes as Types } from '@/commit-types/types';
+import { CommitTypes as Types } from "@/commit-types/types";
 
 export type CommitTypes = Types;
 

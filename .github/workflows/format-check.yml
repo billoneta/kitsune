@@ -9,7 +9,7 @@ jobs:
   strategy:
    fail-fast: false
    matrix:
-    node: ['lts/*']
+    node: ["lts/*"]
   steps:
    - name: Checkout code
      uses: actions/checkout@v4
@@ -23,7 +23,7 @@ jobs:
      uses: actions/setup-node@v4
      with:
       node-version: ${{ matrix.node }}
-      cache: 'pnpm'
+      cache: "pnpm"
 
    - name: Install dependencies
      run: pnpm install
@@ -32,4 +32,4 @@ jobs:
      run: pnpm build
 
    - name: Check formatting
-     run: 'pnpm run format:check'
+     run: "pnpm run format:check"

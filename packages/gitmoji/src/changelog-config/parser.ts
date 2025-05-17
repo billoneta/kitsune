@@ -1,4 +1,4 @@
-import createGitmojiParserOpts from '@/parser';
+import createGitmojiParserOpts from "@/parser";
 
 /**
  * Creates parser configuration options combining gitmoji defaults with custom rules
@@ -13,7 +13,7 @@ import createGitmojiParserOpts from '@/parser';
 export default function createParserOpts() {
  return {
   ...createGitmojiParserOpts(),
-  noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES'],
+  noteKeywords: ["BREAKING CHANGE", "BREAKING CHANGES"],
   revertPattern: /revert:\s([\s\S]*?)\s*This reverts commit (\w*)\./,
   revertCorrespondcene: [`header`, `hash`],
  };

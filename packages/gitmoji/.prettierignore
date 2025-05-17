@@ -1,8 +1,5 @@
 package*
 
-# Docs and markdown files
-*.md
-*.mdx
 *.hbs
 
 # Common directories to ignore

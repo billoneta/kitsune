@@ -1,9 +1,5 @@
 package*
 
-# Docs and markdown files
-*.md
-*.mdx
-
 # Common directories to ignore
 node_modules/**
 dist/**

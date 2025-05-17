@@ -1,7 +1,7 @@
-import type { UserConfig } from '@commitlint/types';
-import createGitmojiPlugin from '@/commitlint-config/plugin';
-import createGitmojiPreset from '@/commitlint-config/preset';
-import createGitmojiRules from '@/commitlint-config/rules';
+import type { UserConfig } from "@commitlint/types";
+import createGitmojiPlugin from "@/commitlint-config/plugin";
+import createGitmojiPreset from "@/commitlint-config/preset";
+import createGitmojiRules from "@/commitlint-config/rules";
 
 /**
  * Commitlint configuration with Gitmoji support
@@ -13,7 +13,7 @@ import createGitmojiRules from '@/commitlint-config/rules';
  * - Loads Gitmoji plugin for extended functionality
  */
 const config: UserConfig = {
- formatter: '@commitlint/format',
+ formatter: "@commitlint/format",
  rules: createGitmojiRules(),
  parserPreset: createGitmojiPreset(),
  plugins: [createGitmojiPlugin()],
