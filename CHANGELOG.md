@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.24`](https://github.com/billoneta/kitsune/compare/v1.1.23...v1.1.24)
+🗓️ **Released:** `2025-05-17`
+
+#### 📝 Documentation
+
+Add note to CONTRIBUTING.md for code tidying before pushing.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Docs updates and improvements
+
+* Add note to CONTRIBUTING.md for code tidying before pushing ([f0ed00a](https://github.com/billoneta/kitsune/commit/f0ed00a))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.23`](https://github.com/billoneta/kitsune/compare/v1.1.22...v1.1.23)
 🗓️ **Released:** `2025-05-17`
 
