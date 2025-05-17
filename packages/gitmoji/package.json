@@ -1,7 +1,7 @@
 {
   "name": "@billoneta/gitmoji",
   "description": "🧱 My customized Gitmoji Config - a fork of https://github.com/arvinxx/gitmoji-commit-workflow - just with several bug fixes and a cleaner look.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "exports": {
     ".": {

@@ -1,7 +1,7 @@
 {
   "name": "@billoneta/utils",
   "description": "🧱 My customized Utilities for any project.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "exports": {
     ".": {
