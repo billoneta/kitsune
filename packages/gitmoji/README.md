@@ -96,7 +96,7 @@ git commit -m "📝 docs: Update README.md with project details and installation
 You need to create a commitlint file first, [files config](https://commitlint.js.org/reference/configuration.html)
 
 ```js
-// commitlint.config.js or .commitlint.js
+// commitlint.config.js or .commitlintrc.js
 
 export default {
  extends: ['@billoneta/gitmoji/commitlint-config'],

@@ -37,7 +37,7 @@ pnpm add -D @billoneta/config
 > [!NOTE]
 > A brief explanation of its use and the most recommended one.
 
-You need to create a changelog file first, `changelog.config.ts` or `.changelogrc.js`
+You need to create a changelog file first, `changelog.config.js` or `.changelogrc.js`
 
 > [!WARNING]
 > These are the only files supported at the moment
@@ -103,10 +103,10 @@ export default defineConfig({
 You need to create a commitlint file first, [files config](https://commitlint.js.org/reference/configuration.html)
 
 > [!IMPORTANT]
-> For best preference, I recommend using **commitlint.config.js** or **.commitlint.js**
+> For best preference, I recommend using **commitlint.config.js** or **.commitlintrc.js**
 
 ```js
-// commitlint.config.js or .commitlint.js
+// commitlint.config.js or .commitlintrc.js
 
 // @ts-check
 import commitlintConfig from '@billoneta/config/commitlint-config';
@@ -226,7 +226,7 @@ import { defineConfig } from 'eslint/config';
 export default defineConfig([eslintConfig.typescript]);
 ```
 
-### 🔗 Combining multiple setups
+#### 🔗 Combining multiple setups
 
 Need to mix configurations? No problem. Just stack them:
 
@@ -379,10 +379,10 @@ export default defineConfig({
 You need to create a renovate file first, [files config](https://docs.renovatebot.com/configuration-options/)
 
 > [!IMPORTANT]
-> For best preference, I recommend using **renovate.json** or **renovate.json5**
+> For best preference, I recommend using **renovate.json** or **.renovaterc.json**
 
 ```json
-// .github/renovate.json
+// .github/renovate.json or .github/.renovaterc.json
 
 {
  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
