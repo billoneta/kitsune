@@ -1,5 +1,5 @@
-import type { PluginSpec } from "semantic-release";
-import type { NpmPluginOptions } from "@/release-config/types";
+import type { PluginSpec } from 'semantic-release';
+import type { NpmPluginOptions } from '@/release-config/types';
 
 /**
  * Configures the semantic-release npm plugin with monorepo support
@@ -15,7 +15,7 @@ export const npmPlugin = (options: NpmPluginOptions = {}): PluginSpec<NpmPluginO
  const { npmPublish, ...customized } = options;
 
  return [
-  "@semantic-release/npm",
+  '@semantic-release/npm',
   {
    npmPublish: npmPublish ?? false,
    ...customized,

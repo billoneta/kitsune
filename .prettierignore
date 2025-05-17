@@ -21,3 +21,6 @@ coverage/**
 
 # Minified files
 *.min.*
+
+# Misc
+CHANGELOG.md

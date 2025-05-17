@@ -1,5 +1,5 @@
-import type { Config } from "@billoneta/gitmoji/changelog-config/types";
-import displayCommitTypes from "@billoneta/gitmoji/commit-types";
+import type { Config } from '@billoneta/gitmoji/changelog-config/types';
+import displayCommitTypes from '@billoneta/gitmoji/commit-types';
 
 /**
  * Changelog Configuration Example
@@ -24,44 +24,44 @@ import displayCommitTypes from "@billoneta/gitmoji/commit-types";
 const defaultConfig: Config = {
  customCommitTypeMap: {
   feat: {
-   emoji: "✨",
+   emoji: '✨',
   },
   fix: {
-   emoji: "🐛",
+   emoji: '🐛',
   },
   perf: {
-   emoji: "⚡",
+   emoji: '⚡',
   },
   refactor: {
-   emoji: "♻",
+   emoji: '♻',
   },
   chore: {
-   emoji: "🔧",
+   emoji: '🔧',
   },
   docs: {
-   emoji: "📝",
+   emoji: '📝',
   },
   build: {
-   emoji: "📦️",
+   emoji: '📦️',
   },
   ci: {
-   emoji: "👷",
+   emoji: '👷',
   },
   test: {
-   emoji: "✅",
+   emoji: '✅',
   },
   style: {
-   emoji: "🎨",
+   emoji: '🎨',
   },
   wip: {
-   emoji: "🚑️",
+   emoji: '🚑️',
   },
   revert: {
-   emoji: "⏪",
+   emoji: '⏪',
   },
  },
  customScopeMap: {
-  "*": "🎯 *",
+  '*': '🎯 *',
  },
  // displayScopes: [],
  displayCommitTypes,

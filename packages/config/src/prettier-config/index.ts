@@ -1,6 +1,6 @@
-import * as prettierPluginSortImports from "@ianvs/prettier-plugin-sort-imports";
-import type { Options } from "prettier";
-import * as prettierPluginTailwindcss from "prettier-plugin-tailwindcss";
+import * as prettierPluginSortImports from '@ianvs/prettier-plugin-sort-imports';
+import type { Options } from 'prettier';
+import * as prettierPluginTailwindcss from 'prettier-plugin-tailwindcss';
 
 /**
  * Prettier Configuration Example
@@ -28,20 +28,20 @@ const prettierConfig: Options = {
  semi: true,
  singleQuote: true,
  jsxSingleQuote: false,
- trailingComma: "es5",
+ trailingComma: 'es5',
  bracketSpacing: true,
  bracketSameLine: false,
- arrowParens: "always",
- quoteProps: "as-needed",
+ arrowParens: 'always',
+ quoteProps: 'as-needed',
  singleAttributePerLine: true,
- proseWrap: "preserve",
- htmlWhitespaceSensitivity: "css",
+ proseWrap: 'preserve',
+ htmlWhitespaceSensitivity: 'css',
  vueIndentScriptAndStyle: false,
- embeddedLanguageFormatting: "auto",
+ embeddedLanguageFormatting: 'auto',
  plugins: [prettierPluginSortImports, prettierPluginTailwindcss],
- importOrder: ["<BUILTIN_MODULES>", "<THIRD_PARTY_MODULES>", "^[^.]/.*", "^\\./.*", "^\\.\\./.*"],
- importOrderParserPlugins: ["classProperties", "importAssertions", "decorators-legacy", "typescript", "jsx"],
- importOrderTypeScriptVersion: "5.8.3",
+ importOrder: ['<BUILTIN_MODULES>', '<THIRD_PARTY_MODULES>', '^[^.]/.*', '^\\./.*', '^\\.\\./.*'],
+ importOrderParserPlugins: ['classProperties', 'importAssertions', 'decorators-legacy', 'typescript', 'jsx'],
+ importOrderTypeScriptVersion: '5.8.3',
  importOrderCaseSensitive: true,
  tailwindPreserveWhitespace: true,
 } satisfies Options;

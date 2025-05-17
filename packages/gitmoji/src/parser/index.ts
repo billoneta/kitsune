@@ -1,4 +1,4 @@
-import { emojiStandardRegex, gitmojiCodeRegex, gitmojiUnicodeRegex } from "@/regexs";
+import { emojiStandardRegex, gitmojiCodeRegex, gitmojiUnicodeRegex } from '@/regexs';
 
 /**
  * Creates parser options for Gitmoji commit messages
@@ -21,6 +21,6 @@ import { emojiStandardRegex, gitmojiCodeRegex, gitmojiUnicodeRegex } from "@/reg
 export default function createGitmojiParserOpts() {
  return {
   headerPattern: new RegExp(`^(?:${String(emojiStandardRegex.source)}|(?:${String(gitmojiCodeRegex.source)})|(?:${String(gitmojiUnicodeRegex.source)}))\\s(?<type>\\w*)(?:\\((?<scope>.*)\\))?!?:\\s(?<subject>(?:(?!#).)*(?:(?!\\s).))(?:\\s\\(?(?<ticket>#\\d*)\\)?)?$`),
-  headerCorrespondence: ["type", "scope", "subject", "ticket"],
+  headerCorrespondence: ['type', 'scope', 'subject', 'ticket'],
  };
 }

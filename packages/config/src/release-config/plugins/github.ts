@@ -1,5 +1,5 @@
-import type { PluginSpec } from "semantic-release";
-import type { GithubPluginOptions } from "@/release-config/types";
+import type { PluginSpec } from 'semantic-release';
+import type { GithubPluginOptions } from '@/release-config/types';
 
 /**
  * Configures the semantic-release GitHub plugin
@@ -17,45 +17,45 @@ export const githubPlugin = (options: GithubPluginOptions = {}): PluginSpec<Gith
  const { successComment, failComment, releasedLabels, addReleases, assets, ...customized } = options;
 
  return [
-  "@semantic-release/github",
+  '@semantic-release/github',
   {
    successComment:
     successComment ??
     [
      // prettier
-     "🚀 Successfully released **v\${nextRelease.version}** \`(\${nextRelease.tag})\`! 🎉",
-     "🔗 [View release details](\${nextRelease.url})\n",
-     "Thanks for contributing to the project! 🙌",
-    ].join("\n"),
+     '🚀 Successfully released **v\${nextRelease.version}** \`(\${nextRelease.tag})\`! 🎉',
+     '🔗 [View release details](\${nextRelease.url})\n',
+     'Thanks for contributing to the project! 🙌',
+    ].join('\n'),
    failComment:
     failComment ??
     [
      // prettier
-     "❌ Uh-oh! Failed to release **v\${nextRelease.version}** \`(\${nextRelease.tag})\`.",
-     "📄 Check logs or CI output for more info.\n",
+     '❌ Uh-oh! Failed to release **v\${nextRelease.version}** \`(\${nextRelease.tag})\`.',
+     '📄 Check logs or CI output for more info.\n',
      "We're on it like a debugger on a stack trace. 🐛",
-    ].join("\n"),
+    ].join('\n'),
    releasedLabels: releasedLabels ?? [
     // prettier
     'released<%= nextRelease.channel ? `-${nextRelease.channel}` : "" %>',
    ],
-   addReleases: addReleases ?? "bottom",
+   addReleases: addReleases ?? 'bottom',
    assets: [
     ...(assets ?? []),
     {
-     path: "CHANGELOG.md",
-     name: "CHANGELOG",
-     label: "Changelog",
+     path: 'CHANGELOG.md',
+     name: 'CHANGELOG',
+     label: 'Changelog',
     },
     {
-     path: "README.md",
-     name: "README",
-     label: "Readme",
+     path: 'README.md',
+     name: 'README',
+     label: 'Readme',
     },
     {
-     path: "license.md",
-     name: "license",
-     label: "License",
+     path: 'license.md',
+     name: 'license',
+     label: 'License',
     },
    ].filter(Boolean),
    ...customized,

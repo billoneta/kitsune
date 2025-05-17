@@ -1,11 +1,11 @@
-import changelogConfig from "@/changelog-config";
-import commitlintConfig from "@/commitlint-config";
-import eslintConfig from "@/eslint-config";
-import prettierConfig from "@/prettier-config";
-import releaseConfig from "@/release-config";
+import changelogConfig from '@/changelog-config';
+import commitlintConfig from '@/commitlint-config';
+import eslintConfig from '@/eslint-config';
+import prettierConfig from '@/prettier-config';
+import releaseConfig from '@/release-config';
 
 /**
- * Unified Configuration Export
+ * Unified config Export
  *
  * Aggregates all project configurations for easy access and sharing across tools.
  * Contains pre-configured setups for:

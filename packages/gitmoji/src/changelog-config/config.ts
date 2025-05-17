@@ -1,5 +1,5 @@
-import { cosmiconfigSync } from "cosmiconfig";
-import type { Config } from "@/changelog-config/types";
+import { cosmiconfigSync } from 'cosmiconfig';
+import type { Config } from '@/changelog-config/types';
 
 const defaultConfig: Config = {
  withEmoji: true,
@@ -11,14 +11,14 @@ const defaultConfig: Config = {
  */
 export default function config(): Config {
  try {
-  const explorer = cosmiconfigSync("changelog", {
+  const explorer = cosmiconfigSync('changelog', {
    searchPlaces: [
     // prettier
-    "changelog.config.ts",
-    "changelog.config.js",
-    ".changelogrc.json",
-    ".changelogrc.ts",
-    ".changelogrc.js",
+    'changelog.config.ts',
+    'changelog.config.js',
+    '.changelogrc.json',
+    '.changelogrc.ts',
+    '.changelogrc.js',
    ],
   });
   const result = explorer.search();

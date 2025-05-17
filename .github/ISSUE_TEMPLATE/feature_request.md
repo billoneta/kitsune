@@ -1,9 +1,9 @@
 ---
 name: Feature Request
 about: Pitch us your bright idea for this project
-title: ""
-labels: ""
-assignees: ""
+title: ''
+labels: ''
+assignees: ''
 ---
 
 ### Is your idea born from a problem? Tell us!

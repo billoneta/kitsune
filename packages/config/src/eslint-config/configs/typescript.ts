@@ -1,24 +1,24 @@
-import type { Linter } from "eslint";
-import { composer, mergeConfigs } from "eslint-flat-config-utils";
-import tseslint from "typescript-eslint";
+import type { Linter } from 'eslint';
+import { composer, mergeConfigs } from 'eslint-flat-config-utils';
+import tseslint from 'typescript-eslint';
 
 const mergedTypescriptConfig = mergeConfigs(...(tseslint.config(tseslint.configs.recommended, tseslint.configs.eslintRecommended) as unknown as Linter.Config[]));
 
 export default (await composer(mergedTypescriptConfig)
- .override("typescript-eslint/eslint-recommended", {
-  name: "@billoneta/config/eslint-config/typescript",
+ .override('typescript-eslint/eslint-recommended', {
+  name: '@billoneta/config/eslint-config/typescript',
  })
  .overrideRules({
-  "@typescript-eslint/no-unused-vars": [
-   "error",
+  '@typescript-eslint/no-unused-vars': [
+   'error',
    {
-    argsIgnorePattern: "^_",
-    varsIgnorePattern: "^_",
-    caughtErrorsIgnorePattern: "^_",
-    destructuredArrayIgnorePattern: "^_",
+    argsIgnorePattern: '^_',
+    varsIgnorePattern: '^_',
+    caughtErrorsIgnorePattern: '^_',
+    destructuredArrayIgnorePattern: '^_',
    },
   ],
  })
  .renamePlugins({
-  "@typescript-eslint": "typescript",
+  '@typescript-eslint': 'typescript',
  })) as Linter.Config[];

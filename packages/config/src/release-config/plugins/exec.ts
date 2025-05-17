@@ -1,5 +1,5 @@
-import type { PluginSpec } from "semantic-release";
-import type { ExecPluginOptions } from "@/release-config/types";
+import type { PluginSpec } from 'semantic-release';
+import type { ExecPluginOptions } from '@/release-config/types';
 
 /**
  * Configures the semantic-release exec plugin
@@ -17,7 +17,7 @@ export const execPlugin = (options: ExecPluginOptions = {}): PluginSpec<ExecPlug
  const { prepareCmd, publishCmd, successCmd, failCmd, ...customized } = options;
 
  return [
-  "@semantic-release/exec",
+  '@semantic-release/exec',
   {
    prepareCmd: prepareCmd ?? 'echo "📦 Preparing release ${nextRelease.tag} v${nextRelease.version}"',
    publishCmd: publishCmd ?? 'echo "🚀 Publishing release ${nextRelease.tag} v${nextRelease.version}"',

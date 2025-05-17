@@ -1,4 +1,4 @@
-import { gitmojis } from "gitmojis";
+import { gitmojis } from 'gitmojis';
 
 /**
  * Array of gitmoji codes (e.g. [":art:", ":zap:", ...])

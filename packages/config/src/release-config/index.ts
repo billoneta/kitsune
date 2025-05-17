@@ -1,6 +1,6 @@
-import type { Options, PluginSpec } from "semantic-release";
-import { changelogPlugin, commitAnalyzerPlugin, execPlugin, gitPlugin, githubPlugin, npmPlugin, releaseNotesGeneratorPlugin } from "@/release-config/plugins";
-import type { ReleaseConfigOptions } from "@/release-config/types";
+import type { Options, PluginSpec } from 'semantic-release';
+import { changelogPlugin, commitAnalyzerPlugin, execPlugin, gitPlugin, githubPlugin, npmPlugin, releaseNotesGeneratorPlugin } from '@/release-config/plugins';
+import type { ReleaseConfigOptions } from '@/release-config/types';
 
 /**
  * Semantic-release Configuration Example
@@ -15,14 +15,13 @@ import type { ReleaseConfigOptions } from "@/release-config/types";
  * @example
  * // Customizing release types:
  * const customConfig = {
- *   branches: ['main', {
+ *   branches: ['next', {
  *      name: 'next',
  *      channel: 'next',
  *      prerelease: true
  *   }]
  *   dryRun: true,
  *   npm: {
- *     monorepo: true,
  *     npmPublish: true,
  *     tarballDir: './path/to/you/dir',
  *     pkgRoot: './path/to/you/root'
@@ -68,17 +67,17 @@ function releaseConfig(options: ReleaseConfigOptions = {}): Options {
  return {
   branches: branches ?? [
    // prettier
-   { name: "main", channel: "latest" },
-   { name: "master", channel: "latest" },
-   { name: "next", channel: "next", prerelease: "next" },
-   { name: "next-*", channel: "next", prerelease: "next" },
-   { name: "beta", channel: "beta", prerelease: "beta" },
-   { name: "beta-*", channel: "beta", prerelease: "beta" },
-   { name: "dev", channel: "alpha", prerelease: "alpha" },
-   { name: "dev-*", channel: "alpha", prerelease: "alpha" },
+   { name: 'main', channel: 'latest' },
+   { name: 'master', channel: 'latest' },
+   { name: 'next', channel: 'next', prerelease: 'next' },
+   { name: 'next-*', channel: 'next', prerelease: 'next' },
+   { name: 'beta', channel: 'beta', prerelease: 'beta' },
+   { name: 'beta-*', channel: 'beta', prerelease: 'beta' },
+   { name: 'dev', channel: 'alpha', prerelease: 'alpha' },
+   { name: 'dev-*', channel: 'alpha', prerelease: 'alpha' },
   ],
   ci: ci ?? true,
-  tagFormat: tagFormat ?? "v${version}",
+  tagFormat: tagFormat ?? 'v${version}',
   plugins: [...(plugins ?? []), ...defaultPlugins].filter(Boolean),
   ...customized,
  };

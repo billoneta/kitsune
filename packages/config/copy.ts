@@ -1,13 +1,13 @@
-import { copyFileSync, mkdirSync } from "node:fs";
-import path from "node:path";
-import { glob } from "glob";
+import { copyFileSync, mkdirSync } from 'node:fs';
+import path from 'node:path';
+import { glob } from 'glob';
 
 export async function copyFiles(): Promise<boolean> {
  try {
-  const files = await glob("src/**/*.json");
+  const files = await glob('src/**/*.json');
   for (const file of files) {
-   const relativePath = path.relative("src", file);
-   const destPath = path.join("dist", relativePath);
+   const relativePath = path.relative('src', file);
+   const destPath = path.join('dist', relativePath);
    const destDir = path.dirname(destPath);
    mkdirSync(destDir, {
     recursive: true,
@@ -27,5 +27,5 @@ copyFiles()
   process.exitCode = 1;
  })
  .then((copy) => {
-  if (copy) console.log("All files are copied");
+  if (copy) console.log('All files are copied');
  });

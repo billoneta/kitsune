@@ -1,9 +1,9 @@
-import _ from "lodash";
-import pangu from "pangu";
-import { displayCommitType, displayScopeMap } from "@/changelog-config/handlers";
-import { GitHubLookup, type Commit, type CommitTypes, type Config, type Context, type ICommitReferences } from "@/changelog-config/types";
-import { gitHubLookup } from "@/changelog-config/utils/lookup";
-import commitTypes from "@/commit-types";
+import _ from 'lodash';
+import pangu from 'pangu';
+import { displayCommitType, displayScopeMap } from '@/changelog-config/handlers';
+import { GitHubLookup, type Commit, type CommitTypes, type Config, type Context, type ICommitReferences } from '@/changelog-config/types';
+import { gitHubLookup } from '@/changelog-config/utils/lookup';
+import commitTypes from '@/commit-types';
 
 const { cloneDeep } = _;
 
@@ -37,7 +37,7 @@ export const transformer =
 
   let exclude = true;
   commit.notes.forEach((note) => {
-   note.title = `${config.withEmoji === false ? "" : "💥"} BREAKING CHANGES`;
+   note.title = `${config.withEmoji === false ? '' : '💥'} BREAKING CHANGES`;
    exclude = false;
   });
 
@@ -48,8 +48,8 @@ export const transformer =
   commit.type = displayCommitType(commit.type, config);
 
   if (commit.scope) {
-   if (commit.scope === "*") {
-    commit.scope = "";
+   if (commit.scope === '*') {
+    commit.scope = '';
    }
 
    if (config.displayScopes) {
@@ -67,7 +67,7 @@ export const transformer =
    commit.hash = commit.hash.substring(0, 7);
   }
 
-  if (commit.subject && typeof commit.subject === "string") {
+  if (commit.subject && typeof commit.subject === 'string') {
    let repository = context.repository ? `${context.host}/${context.owner}/${context.repository}` : context.repoUrl;
    if (repository) {
     repository = `${repository}/issues/`;
@@ -77,9 +77,9 @@ export const transformer =
     });
    }
 
-   if (commit.host && typeof commit.host === "string") {
+   if (commit.host && typeof commit.host === 'string') {
     commit.subject = commit.subject.replace(/\B@([a-z0-9](?:-?[a-z0-9/]){0,38})/g, (_, username) => {
-     if (username.includes("/")) {
+     if (username.includes('/')) {
       return `@${username}`;
      }
 

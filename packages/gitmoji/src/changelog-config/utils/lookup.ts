@@ -1,5 +1,5 @@
-import fetch from "sync-fetch";
-import { GitHubLookup } from "@/changelog-config/types";
+import fetch from 'sync-fetch';
+import { GitHubLookup } from '@/changelog-config/types';
 
 /**
  * Looks up GitHub user information by email address
@@ -17,7 +17,7 @@ export function gitHubLookup(email: string): GitHubLookup | null {
   try {
    const res = fetch(`https://api.github.com/search/commits?q=author-email:${encodeURIComponent(email)}`, {
     headers: {
-     Accept: "application/vnd.github.cloak-preview+json",
+     Accept: 'application/vnd.github.cloak-preview+json',
     },
    });
    if (!res.ok) return null;
@@ -38,7 +38,7 @@ export function gitHubLookup(email: string): GitHubLookup | null {
  try {
   const res = fetch(`https://api.github.com/users/${info.username}`, {
    headers: {
-    Accept: "application/vnd.github.cloak-preview+json",
+    Accept: 'application/vnd.github.cloak-preview+json',
    },
   });
 

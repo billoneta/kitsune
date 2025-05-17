@@ -1,9 +1,9 @@
 ---
 name: Bug Report
 about: Help us get better by reporting issues
-title: ""
-labels: ""
-assignees: ""
+title: ''
+labels: ''
+assignees: ''
 ---
 
 ### What’s going wrong?

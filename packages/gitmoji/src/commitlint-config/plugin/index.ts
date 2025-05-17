@@ -1,5 +1,5 @@
-import type { Plugin } from "@commitlint/types";
-import createGitmojiRule from "@/commitlint-config/plugin/rule";
+import type { Plugin } from '@commitlint/types';
+import createGitmojiRule from '@/commitlint-config/plugin/rule';
 
 /**
  * Creates a commitlint plugin with Gitmoji validation
@@ -13,7 +13,7 @@ import createGitmojiRule from "@/commitlint-config/plugin/rule";
 export default function createGitmojiPlugin(): Plugin {
  return {
   rules: {
-   "start-with-gitmoji": createGitmojiRule,
+   'start-with-gitmoji': createGitmojiRule,
   },
  };
 }

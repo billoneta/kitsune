@@ -1,13 +1,13 @@
-import { readFileSync } from "node:fs";
-import { sep } from "node:path";
-import { defineConfig } from "tsup";
+import { readFileSync } from 'node:fs';
+import { sep } from 'node:path';
+import { defineConfig } from 'tsup';
 
-const pkg = JSON.parse(readFileSync(`${process.cwd()}${sep}package.json`, "utf8"));
+const pkg = JSON.parse(readFileSync(`${process.cwd()}${sep}package.json`, 'utf8'));
 
 export default defineConfig({
- entry: ["src/**/*.ts", "src/**/**/*.ts"],
- outDir: "dist",
- format: ["esm"],
+ entry: ['src/**/*.ts', 'src/**/**/*.ts'],
+ outDir: 'dist',
+ format: ['esm'],
  dts: {
   resolve: true,
   compilerOptions: {
@@ -18,19 +18,19 @@ export default defineConfig({
  splitting: false,
  clean: true,
  sourcemap: true,
- tsconfig: "tsconfig.json",
+ tsconfig: 'tsconfig.json',
  treeshake: {
-  preset: "recommended",
+  preset: 'recommended',
   annotations: true,
  },
  bundle: true,
  shims: false,
- platform: "node",
+ platform: 'node',
  esbuildOptions: (options) => {
   options.supported = {
-   "dynamic-import": true,
-   "import-meta": true,
-   "top-level-await": true,
+   'dynamic-import': true,
+   'import-meta': true,
+   'top-level-await': true,
   };
   options.banner = {
    js: `// ${pkg.name} v${pkg.version}\n// ${pkg.license} License\n`,
@@ -38,8 +38,8 @@ export default defineConfig({
  },
  define: {
   __VERSION__: `"${pkg.version}"`,
-  __ESM_ONLY__: "true",
+  __ESM_ONLY__: 'true',
   __BUILD_DATE__: `"${new Date().toISOString()}"`,
  },
- outExtension: () => ({ js: ".js" }),
+ outExtension: () => ({ js: '.js' }),
 });

@@ -1,4 +1,4 @@
-import type { Options as SemanticReleaseOptions } from "semantic-release";
+import type { Options as SemanticReleaseOptions } from 'semantic-release';
 
 /**
  * Options for the changelog plugin.
@@ -20,7 +20,7 @@ export type AnalyzerReleaseRules =
     message?: string;
     scope?: string;
     breaking?: boolean;
-    release: "patch" | "minor" | "major" | false;
+    release: 'patch' | 'minor' | 'major' | false;
    }[];
 
 /**
@@ -115,7 +115,7 @@ export interface GithubPluginOptions {
  labels?: string[] | false;
  assignees?: string[];
  releasedLabels?: string[] | false;
- addReleases?: false | "top" | "bottom";
+ addReleases?: false | 'top' | 'bottom';
  draftRelease?: boolean;
  releaseNameTemplate?: string;
  releaseBodyTemplate?: string;
@@ -153,11 +153,11 @@ export interface ReleaseNotesGeneratorPluginOptions {
  * Config options for the main function.
  */
 export interface ReleaseConfigOptions extends SemanticReleaseOptions {
- changelog?: ChangelogPluginOptions;
  commitAnalyzer?: CommitAnalyzerPluginOptions;
  exec?: ExecPluginOptions;
+ releaseNotesGenerator?: ReleaseNotesGeneratorPluginOptions;
+ changelog?: ChangelogPluginOptions;
+ npm?: NpmPluginOptions;
  git?: GitPluginOptions;
  github?: GithubPluginOptions;
- npm?: NpmPluginOptions;
- releaseNotesGenerator?: ReleaseNotesGeneratorPluginOptions;
 }

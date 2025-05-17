@@ -1,4 +1,4 @@
-import { Commit } from "@/changelog-config/types";
+import { Commit } from '@/changelog-config/types';
 
 interface IWhatBump {
  level: 0 | 1 | 2;
@@ -36,15 +36,15 @@ export default function whatBump(commits: Commit[]): IWhatBump {
    continue;
   }
 
-  if (level > 1 && commit.type === "feat") {
+  if (level > 1 && commit.type === 'feat') {
    features++;
    level = 1;
   }
  }
 
- const BREAKING = formatMessage(breakings, "BREAKING CHANGE");
- const FEATURE = formatMessage(features, "feature");
- const verb = breakings === 1 ? "is" : "are";
+ const BREAKING = formatMessage(breakings, 'BREAKING CHANGE');
+ const FEATURE = formatMessage(features, 'feature');
+ const verb = breakings === 1 ? 'is' : 'are';
 
  return {
   level,

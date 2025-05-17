@@ -1,6 +1,6 @@
-import { defineCommitTypeMap } from "@/changelog-config/handlers";
-import type { Config, Context, GitHubLookup } from "@/changelog-config/types";
-import { gitHubLookup } from "@/changelog-config/utils/lookup";
+import { defineCommitTypeMap } from '@/changelog-config/handlers';
+import type { Config, Context, GitHubLookup } from '@/changelog-config/types';
+import { gitHubLookup } from '@/changelog-config/utils/lookup';
 
 const users = new Map<string, GitHubLookup | null>();
 
@@ -17,7 +17,7 @@ export const finalizeContext =
   * @returns {Context | void} The enhanced context or undefined if invalid
   */
  (context: Context): Context | void => {
-  const subCommitScope = (config.customScopeMap && config.customScopeMap["*"]) ?? null;
+  const subCommitScope = (config.customScopeMap && config.customScopeMap['*']) ?? null;
   const commitTypeMap = defineCommitTypeMap(config.customCommitTypeMap);
 
   context.commitGroups = context.commitGroups?.map((item) => {

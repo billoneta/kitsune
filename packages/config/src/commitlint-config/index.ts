@@ -1,4 +1,4 @@
-import type { UserConfig } from "@commitlint/types";
+import type { UserConfig } from '@commitlint/types';
 
 /**
  * Commitlint Configuration Example
@@ -31,7 +31,7 @@ import type { UserConfig } from "@commitlint/types";
  */
 
 const commitlintConfig: UserConfig = {
- extends: ["@billoneta/gitmoji/commitlint-config"],
+ extends: ['@billoneta/gitmoji/commitlint-config'],
 } satisfies UserConfig;
 
 export default commitlintConfig;

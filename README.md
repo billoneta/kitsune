@@ -2,11 +2,14 @@
   <h1>🧰 The perfect config from <a href="https://github.com/billoneta/kitsune">@billoneta/kitsune</a></h1>
   <b>🔥 <strong>Modular, reusable, and opinionated dev tools for modern projects.</strong></b>
   <br/><br/>
-  <a aria-label="Github License" href="https://github.com/billoneta/kitsune/blob/main/license.md">
-    <img src="https://img.shields.io/github/license/billoneta/kitsune?color=blue&logo=github&label=License"/>
+  <a aria-label="Written with" href="https://www.typescriptlang.org/">
+    <img src="https://img.shields.io/static/v1?label=Written%20with&message=Typescript&color=blue&logo=typescript"/>
   </a>
   <a aria-label="Version" href="https://github.com/billoneta/kitsune/releases">
     <img src="https://img.shields.io/github/v/release/billoneta/kitsune?color=blue&logo=github&label=Version"/>
+  </a>
+  <a aria-label="Github License" href="https://github.com/billoneta/kitsune/blob/main/license.md">
+    <img src="https://img.shields.io/github/license/billoneta/kitsune?color=blue&logo=github&label=License"/>
   </a>
 </div>
 
@@ -35,26 +38,26 @@
 
 ---
 
-## 📦 Available Packages
+## 🧱 Available Packages
 
-A curated collection of shared tools and configurations to keep all my projects clean, consistent, and maintainable.
+A curated collection of shared tools and configs to keep all my projects clean, consistent, and maintainable.
 
 <!-- prettier-ignore-start -->
-| 🧱 **Package** | 🔢 **Version** | 📈 **Weekly Downloads** | 📚 **View Docs** |
+| 📦 **Package** | 🔢 **Version** | 📈 **Weekly Downloads** | 📚 **View Docs** |
 | - | - | - | - |
-| [`@billoneta/config`](https://npmjs.com/package/@billoneta/config) | ![](https://img.shields.io/npm/v/@billoneta/config/latest.svg) | [![](https://img.shields.io/npm/dw/@billoneta/config)](https://npmjs.com/package/@billoneta/config) | [View Config Docs](/packages/config/README.md) |
-| [`@billoneta/gitmoji`](https://npmjs.com/package/@billoneta/gitmoji) | ![](https://img.shields.io/npm/v/@billoneta/gitmoji/latest.svg) | [![](https://img.shields.io/npm/dw/@billoneta/gitmoji)](https://npmjs.com/package/@billoneta/gitmoji) | [View Gitmoji Docs](/packages/gitmoji/README.md) |
-| [`@billoneta/utils`](https://npmjs.com/package/@billoneta/utils) | ![](https://img.shields.io/npm/v/@billoneta/utils/latest.svg) | [![](https://img.shields.io/npm/dw/@billoneta/utils)](https://npmjs.com/package/@billoneta/utils) | [View Utils Docs](/packages/utils/README.md) |
+| [`@billoneta/config`](https://www.npmjs.com/package/@billoneta/config) | ![](https://img.shields.io/npm/v/@billoneta/config/latest.svg) | [![](https://img.shields.io/npm/dw/@billoneta/config)](https://www.npmjs.com/package/@billoneta/config) | [View Config Docs](/packages/config/README.md) |
+| [`@billoneta/gitmoji`](https://www.npmjs.com/package/@billoneta/gitmoji) | ![](https://img.shields.io/npm/v/@billoneta/gitmoji/latest.svg) | [![](https://img.shields.io/npm/dw/@billoneta/gitmoji)](https://www.npmjs.com/package/@billoneta/gitmoji) | [View Gitmoji Docs](/packages/gitmoji/README.md) |
+| [`@billoneta/utils`](https://www.npmjs.com/package/@billoneta/utils) | ![](https://img.shields.io/npm/v/@billoneta/utils/latest.svg) | [![](https://img.shields.io/npm/dw/@billoneta/utils)](https://www.npmjs.com/package/@billoneta/utils) | [View Utils Docs](/packages/utils/README.md) |
 <!-- prettier-ignore-end -->
 
 ---
 
 ## 🧩 Package Overviews
 
-### [`@billoneta/config`](https://www.npmjs.com/package/@billoneta/config)
+### 📦 [`@billoneta/config`](https://www.npmjs.com/package/@billoneta/config)
 
 > [!NOTE]
-> Centralized configuration presets for tools like **ESLint**, **Prettier**, **Renovate**, **Lefthook**, and more.
+> Centralized config presets for tools like **ESLint**, **Prettier**, **Renovate**, **Lefthook**, and more.
 
 #### 💾 Installation
 
@@ -67,15 +70,17 @@ yarn add -D @billoneta/config
 pnpm add -D @billoneta/config
 ```
 
-- ✨ Plug-and-play configs
-- 🔁 Versioned and reusable
-- ⚙️ Ideal for monorepos or consistent multi-project setups
+#### ✨ Features
 
-📖 See full docs → **[/packages/config](./packages/config/README.md)**
+- ✨ **Plug-and-play configs**
+- 🔁 **Versioned and reusable**
+- ⚙️ **Ideal for monorepos or consistent multi-project setups**
+
+📖 **[Read here for more info about config](./packages/config/README.md)**
 
 ---
 
-### [`@billoneta/gitmoji`](https://www.npmjs.com/package/@billoneta/gitmoji)
+### 📦 [`@billoneta/gitmoji`](https://www.npmjs.com/package/@billoneta/gitmoji)
 
 > [!NOTE]
 > Automate commit formatting with **Gitmoji** conventions using tools like `commitlint` and `changelog`.
@@ -91,15 +96,17 @@ yarn add -D @billoneta/gitmoji
 pnpm add -D @billoneta/gitmoji
 ```
 
-- 🎭 Standardized commit messages
-- ✅ Compatible with semantic-release
-- 💬 Developer-friendly prompts
+#### ✨ Features
 
-📖 See full docs → **[/packages/gitmoji](./packages/gitmoji/README.md)**
+- 🎭 **Standardized commit messages**
+- ✅ **Compatible with semantic-release**
+- 💬 **Developer-friendly prompts**
+
+📖 **[Read here for more info about gitmoji](./packages/gitmoji/README.md)**
 
 ---
 
-### [`@billoneta/utils`](https://www.npmjs.com/package/@billoneta/utils)
+### 📦 [`@billoneta/utils`](https://www.npmjs.com/package/@billoneta/utils)
 
 > [!NOTE]
 > Handy dev utilities and small helpers used across various projects.
@@ -115,11 +122,13 @@ yarn add -D @billoneta/utils
 pnpm add -D @billoneta/utils
 ```
 
-- 🧪 Lightweight helper functions
-- 📦 Designed for internal use, but stable and versioned
-- 🛠 Constantly growing toolkit
+#### ✨ Features
 
-📖 See full docs → **[/packages/utils](./packages/utils/README.md)**
+- 🧪 **Lightweight helper functions**
+- 📦 **Designed for internal use, but stable and versioned**
+- 🛠 **Constantly growing toolkit**
+
+📖 **[Read here for more info about utils](./packages/utils/README.md)**
 
 ## 🤝 Contributing
 
@@ -135,4 +144,4 @@ For any **inquiries** or **support**, you can reach out via **<tsx@billoneta.xyz
 
 ## 📄 License
 
-This software is **open-source** and distributed under the terms of the **[MIT License](./license.md)** — a **permissive license** that allows **commercial use**, **modification**, **distribution**, and **private use**, with proper attribution.
+Open-source under the MIT License. Check the **[LICENSE](./license.md)** for the legal stuff.
