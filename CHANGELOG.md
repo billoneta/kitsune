@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.28`](https://github.com/billoneta/kitsune/compare/v1.1.27...v1.1.28)
+🗓️ **Released:** `2025-05-17`
+
+#### 🔧 Chores
+
+Remove deprecated configuration files and update README.md for changelog and commitlint file naming conventions.
+
+
+<br/>
+
+[<img width="32" height="32" title="k4itrun" src="https://avatars.githubusercontent.com/u/103044629?v=4" />](https://github.com/k4itrun)
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Other tasks and maintenance
+
+* Remove deprecated configuration files and update README.md for changelog and commitlint file naming conventions ([73c0e2e](https://github.com/billoneta/kitsune/commit/73c0e2e)) - by: [<img width="16" height="16" src="https://avatars.githubusercontent.com/u/103044629?v=4" /> **k4itrun**](https://github.com/k4itrun)
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.27`](https://github.com/billoneta/kitsune/compare/v1.1.26...v1.1.27)
 🗓️ **Released:** `2025-05-17`
 
