@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.26`](https://github.com/billoneta/kitsune/compare/v1.1.25...v1.1.26)
+🗓️ **Released:** `2025-05-17`
+
+#### 📝 Documentation
+
+Update README.md files for @billoneta/gitmoji and @billoneta/utils with project details and installation instructions.
+
+
+<br/>
+
+[<img width="32" height="32" title="k4itrun" src="https://avatars.githubusercontent.com/u/103044629?v=4" />](https://github.com/k4itrun)
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Docs updates and improvements
+
+* Update README.md files for @billoneta/gitmoji and @billoneta/utils with project details and installation instructions ([1eb5e7f](https://github.com/billoneta/kitsune/commit/1eb5e7f)) - by: [<img width="16" height="16" src="https://avatars.githubusercontent.com/u/103044629?v=4" /> **k4itrun**](https://github.com/k4itrun)
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.25`](https://github.com/billoneta/kitsune/compare/v1.1.24...v1.1.25)
 🗓️ **Released:** `2025-05-17`
 
