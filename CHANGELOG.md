@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.21`](https://github.com/billoneta/kitsune/compare/v1.1.20...v1.1.21)
+🗓️ **Released:** `2025-05-17`
+
+#### ♻ Code Refactoring
+
+standardize import quotes and formatting across the project.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Code structure improvements
+
+* Standardize import quotes and formatting across the project ([318e697](https://github.com/billoneta/kitsune/commit/318e697))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.20`](https://github.com/billoneta/kitsune/compare/v1.1.19...v1.1.20)
 🗓️ **Released:** `2025-05-16`
 
