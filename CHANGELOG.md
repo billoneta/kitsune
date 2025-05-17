@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.27`](https://github.com/billoneta/kitsune/compare/v1.1.26...v1.1.27)
+🗓️ **Released:** `2025-05-17`
+
+#### 🔧 Chores
+
+Update package versions to 1.0.6 and adjust .gitignore and pnpm-workspace.yaml.
+
+
+<br/>
+
+[<img width="32" height="32" title="k4itrun" src="https://avatars.githubusercontent.com/u/103044629?v=4" />](https://github.com/k4itrun)
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Other tasks and maintenance
+
+* Update package versions to 1.0.6 and adjust .gitignore and pnpm-workspace.yaml ([11639f4](https://github.com/billoneta/kitsune/commit/11639f4)) - by: [<img width="16" height="16" src="https://avatars.githubusercontent.com/u/103044629?v=4" /> **k4itrun**](https://github.com/k4itrun)
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.26`](https://github.com/billoneta/kitsune/compare/v1.1.25...v1.1.26)
 🗓️ **Released:** `2025-05-17`
 
