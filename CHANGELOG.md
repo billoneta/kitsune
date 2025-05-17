@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.20`](https://github.com/billoneta/kitsune/compare/v1.1.19...v1.1.20)
+🗓️ **Released:** `2025-05-16`
+
+#### 🔧 Chores
+
+- **🎯 Deps**: Update @eslint/js to v9.27.0 and remove the previous version.
+
+
+<br/>
+
+
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Other tasks and maintenance
+
+* **🎯 Deps**: Update @eslint/js to v9.27.0 and remove the previous version ([9a733a0](https://github.com/billoneta/kitsune/commit/9a733a0))
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.19`](https://github.com/billoneta/kitsune/compare/v1.1.18...v1.1.19)
 🗓️ **Released:** `2025-05-16`
 
