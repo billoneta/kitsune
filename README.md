@@ -10,8 +10,10 @@
   </a>
 </div>
 
-> [!NOTE]
+<!-- prettier-ignore-start -->
+> [!NOTE] 
 > **This repository offers reusable configs and utilities to simplify and unify development across projects.** Modular design enables easy adoption **individually or collectively.** Perfect for monorepos, teams, or devs seeking a **solid foundation.**
+<!-- prettier-ignore-end -->
 
 <details>
   <summary>📚 Table of Contents</summary>
