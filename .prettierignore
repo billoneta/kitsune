@@ -1,18 +1,23 @@
+# Root-level files
 package*
 pnpm*
+turbo*
 
-# Common directories to ignore
+# Node.js
 node_modules/**
+
+# Build output
 dist/**
 build/**
-coverage/**
 .next/**
+
+# Test coverage
+coverage/**
+
+# Editor/IDE settings
 .git/**
 .vscode/**
 .idea/**
 
-# Generated and binary files
+# Minified files
 *.min.*
-
-# Custom
-turbo*

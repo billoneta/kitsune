@@ -1,7 +1,11 @@
+# Root-level files
 package*
 
-*.hbs
-
-# Common directories to ignore
+# Node.js
 node_modules/**
+
+# Build output
 dist/**
+
+# Templates
+*.hbs
