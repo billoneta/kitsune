@@ -85,7 +85,7 @@
   "devDependencies": {
     "@commitlint/types": "^19.8.1",
     "@types/lodash": "^4.17.16",
-    "@types/node": "22.15.18",
+    "@types/node": "22.15.19",
     "@types/pangu": "^4.0.2",
     "@types/sync-fetch": "^0.4.3",
     "glob": "^11.0.2",
