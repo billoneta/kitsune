@@ -4,7 +4,7 @@
 </div>
 
 > [!NOTE]
-> If you’re reading this, it means you’re **interested in contributing—thank you!** We truly value your **willingness to help improve this project**. To make collaboration as **smooth and effective as possible**, please take a moment to read through the following **guidelines**.
+> If you’re reading this, it means you’re **interested in contributing — thank you!** We truly value your **willingness to help improve this project**. To make collaboration as **smooth and effective as possible**, please take a moment to read through the following **guidelines**.
 
 <details>
   <summary>📚 Table of Contents</summary>
@@ -37,7 +37,7 @@
 
 ## 🚀 Getting Started
 
-Jumping into a **new project** can sometimes feel overwhelming, especially if you’re new to the **community** or the **codebase**. But don’t worry—**contributing here is straightforward and rewarding.**
+Jumping into a **new project** can sometimes feel overwhelming, especially if you’re new to the **community** or the **codebase**. But don’t worry — **contributing here is straightforward and rewarding.**
 
 We’ve built a **friendly and supportive environment** where **every contribution matters** and **everyone is encouraged to participate.** We’re **excited to have you join us** on this journey!
 
@@ -81,7 +81,7 @@ Now you’re ready to start your changes without the fear of breaking the main s
 
 ### 4. 🔥 Make Your Changes
 
-Time to bring your ideas to life! Whether you're fixing bugs, adding new features, or improving existing ones—go ahead and implement your contribution. Keep things clean, readable, and in line with the project goals.
+Time to bring your ideas to life! Whether you're fixing bugs, adding new features, or improving existing ones — go ahead and implement your contribution. Keep things clean, readable, and in line with the project goals.
 
 Quick tip: To avoid merge conflicts later, make sure to pull the latest changes from the original repository **before** starting your work:
 
@@ -92,8 +92,7 @@ git pull upstream main
 > [!CAUTION]
 > Keep the existing project structure intact and follow the **[Coding Standards](#%EF%B8%8F-coding-standards)** closely.
 
-> [!IMPORTANT]
-> Before submitting your work:
+> [!IMPORTANT] > **Before submitting your work:**
 >
 > - **All tests pass successfully.**
 > - **New tests are added if needed.**
@@ -118,8 +117,7 @@ Your Pull Request should be clear, descriptive, and follow the required structur
 
 For full details on what your PR should include, please refer to the [Pull Request Template](.github/pull_request_template.md).
 
-> [!IMPORTANT]
-> Before submitting your PR:
+> [!IMPORTANT] > **Before submitting your PR:**
 >
 > - Make sure your branch is up to date.
 > - Ensure your code is **[Formatted and Linted](#2--keep-formatting-clean-and-consistent)**
@@ -130,9 +128,9 @@ For full details on what your PR should include, please refer to the [Pull Reque
 
 ## ♻️ Coding Standards
 
-Writing good code isn’t just about making it run—it’s about making it understandable, maintainable, and consistent. These standards help keep the project clean, readable, and easy to work with (even months later when you’ve forgotten what “final_final_finalFix2.js” was supposed to do).
+Writing good code isn’t just about making it run — it’s about making it understandable, maintainable, and consistent. These standards help keep the project clean, readable, and easy to work with (even months later when you’ve forgotten what “final_final_finalFix2.js” was supposed to do).
 
-### 1. ✨ Use the correct commit message format (e.g., `feat: add login button`)
+### 1. ✨ Use the correct commit message format (e.g., `docs: update README`)
 
 We adhere to the **[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)** specification alongside **[Gitmoji](https://gitmoji.dev/)** guidelines to include **meaningful emojis** in every commit. This **standardized approach** keeps our commit history **clean, consistent,** and ready for **automation tasks** like generating **changelogs** and managing **versioning**.
 
@@ -141,8 +139,8 @@ We adhere to the **[Conventional Commits](https://www.conventionalcommits.org/en
 >
 > **Instead of writing vague messages like `Update File` or `Fix Stuff`.** use more meaningful ones like:
 >
-> - **`📝 docs: update README with local setup instructions`**
-> - **`🐛 fix(middleware): correct variable scope issue in auth middleware`**
+> - **📝 docs: Update README with local setup instructions**
+> - **🐛 fix(core): Correct variable scope issue in core**
 
 This helps reviewers (and your future self) understand the purpose behind each change without having to dig through the code.
 
@@ -152,7 +150,7 @@ Stick to the project's formatting rules. Tools like Prettier and ESLint are conf
 
 <!-- prettier-ignore -->
 > [!NOTE] 
-> **Before pushing your code.**
+> **Before pushing your code:**
 >
 > - **To tidy up your code, run:** `pnpm run lint:fix`
 > - **To give your code a makeover, run:** `pnpm run format`
@@ -170,7 +168,7 @@ If a new developer (or your **sleep-deprived teammate**) can’t understand your
 When unsure how to structure something, check how similar features are implemented elsewhere in the codebase. Consistency is more important than personal style.
 
 > [!NOTE]
-> If you think there’s a better way to do something, propose it in a pull request or discussion—but don’t introduce a new pattern just for fun.
+> If you think there’s a better way to do something, propose it in a pull request or discussion — but don’t introduce a new pattern just for fun.
 
 ### 5. 📝 Document when necessary, especially for complex logic
 

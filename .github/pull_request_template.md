@@ -1,46 +1,63 @@
 # Pull Request Template
 
-Thanks for contributing! Please complete the following checklist and fill in the details to help us review your PR faster.
+Thanks for contributing! Please fill out the details below to help us review and merge your PR quickly and painlessly.
 
 ---
 
 ## Summary
 
-Explain **what** this PR does and **why** it matters. Be specific. Avoid vague descriptions like “bug fixes” or “minor updates”.
+What does this PR do, and why should we care?
 
-> [!NOTE]
-> Example:  
-> Adds a login button to the header and integrates it with the OAuth flow using GitHub as the provider.
+Be crystal clear—vague descriptions slow us down.
+
+> [!CAUTION]
+> Saying “Fixes bug” is like saying “Food tastes good” — true, but not helpful.
+
+> [!TIP]
+> Instead, say something like “Update README with local setup instructions.” or “Correct variable scope issue in core.”
+
+<!-- prettier-ignore -->
+> [!NOTE] 
+> **Example:**  
+> - Updates README to include step-by-step local setup guide.
+> - Fixes a variable scope bug that was crashing the core processing logic.
+
+<!-- prettier-ignore-end -->
 
 ---
 
 ## Related Issues
 
-List any related issue numbers and how this PR addresses them.
+Reference any related issues or tickets. Use keywords like `Closes`, `Fixes`, or `Related to`.
 
-> [!NOTE]
-> Example:  
+<!-- prettier-ignore -->
+> [!NOTE] 
+> **Example:**  
 > Closes #42
 
----
-
-## Screenshots or Logs (if applicable)
-
-If your change affects the UI, UX, or runtime behavior, please include relevant screenshots or logs.
+<!-- prettier-ignore-end -->
 
 ---
 
-## Checklist (please confirm before submitting)
+## UI Changes / Logs (if applicable)
 
-- [ ] The code is formatted (`pnpm run format`)
-- [ ] Lint checks pass (`pnpm run lint:fix`)
-- [ ] Tests pass or were updated if needed
-- [ ] The branch is up to date with `main`
-- [ ] I’ve used meaningful commit messages
-- [ ] I’ve reviewed the [Coding Standards](../CONTRIBUTING.md#️-coding-standards)
+Does this change the UI or runtime behavior? Drop screenshots, screen recordings, or relevant logs here.
+
+---
+
+## Checklist
+
+Please confirm the following before submitting:
+
+- [ ] Code is formatted (`pnpm run format` or equivalent)
+- [ ] Linting passes (`pnpm run lint:fix`)
+- [ ] Tests pass or have been updated
+- [ ] Branch is up to date with `main`
+- [ ] Commits are meaningful and well-structured
+- [ ] I've reviewed the [Coding Standards](../CONTRIBUTING.md#️-coding-standards)
 
 ---
 
 ## Additional Notes
 
-Anything else the reviewer should know? Mention any known issues, limitations, or future improvements here.
+Anything else we should know? Known limitations, edge cases, caveats, or future improvements are all welcome.

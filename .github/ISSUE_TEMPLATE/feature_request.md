@@ -1,23 +1,25 @@
 ---
 name: Feature Request
-about: Pitch us your bright idea for this project
+about: Got a brilliant idea? Pitch it here and help shape the future.
 title: ''
-labels: ''
+labels: enhancement
 assignees: ''
 ---
 
-### Is your idea born from a problem? Tell us!
+## What problem are you trying to solve?
 
-Give us a quick rundown of the headache you’re trying to fix. Example: “I get annoyed when [...]”
+What’s bugging you or slowing you down? Tell us the pain point behind your idea.  
+_Example: “It’s frustrating when I have to manually refresh the page to see updates.”_
 
-### What’s your brilliant solution?
+## What’s your proposed solution?
 
-Spell out clearly what you want to see happen instead.
+Describe the feature you’d like to see — be as clear and specific as possible.  
+Bonus points for including examples or possible UI/UX behavior.
 
-### Tried anything else?
+## Have you considered any alternatives?
 
-List any other fixes or features you’ve thought about — we love alternatives!
+Share other ideas you’ve thought of, even if they’re half-baked. Sometimes one bad idea inspires the perfect one.
 
-### Extra details
+## Additional context
 
-Drop any other context, mockups, or screenshots that’ll help us get your vision.
+Mockups? Diagrams? Sketches on a napkin? Anything else that helps bring your vision to life goes here.

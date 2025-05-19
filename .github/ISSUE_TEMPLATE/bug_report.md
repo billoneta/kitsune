@@ -1,39 +1,38 @@
 ---
 name: Bug Report
-about: Help us get better by reporting issues
+about: Spot something weird? Help us squash bugs and improve the experience.
 title: ''
-labels: ''
+labels: bug
 assignees: ''
 ---
 
-### What’s going wrong?
+## What’s the issue?
 
-Briefly explain the weird or unexpected behavior you’ve spotted.
+Briefly describe the unexpected behavior. What’s broken, acting odd, or just doesn’t make sense?
 
-### How can we see it too?
+## Steps to Reproduce
 
-Step-by-step instructions so we can reproduce the glitch:
+Help us see the bug in action. List the steps we need to follow:
 
-1. Navigate to '...'
+1. Go to '...'
 2. Click on '...'
-3. Scroll down to '...'
-4. Witness the bug in its natural habitat
+3. Do this: '...'
+4. And then... boom. Bug.
 
-### What did you expect to happen?
+## Expected Behavior
 
-Describe what you were hoping for instead — the smooth sailing that never came.
+Tell us what _should_ have happened if the universe were behaving correctly.
 
-### Screenshots (if you have any)
+## Screenshots (if applicable)
 
-Got visuals? Share them here to make the mystery clearer.
+Got visual proof? Drop it here. A picture is worth a thousand logs.
 
-### System details
+## System Info
 
-- Go version:
-- Operating system and version:
-- Module involved:
-- App version where this happens (if applicable):
+- **Operating System** (e.g., macOS 14, Windows 11):
+- **Affected Module/Feature**:
+- **App Version** (if relevant):
 
-### Extra info
+## Additional Context
 
-Anything else you think might help? Odd details, suspicious clues, or wild guesses — all welcome.
+Any other clues? Logs, error messages, gut feelings, or wild conspiracy theories are all welcome.
