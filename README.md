@@ -1,4 +1,4 @@
-![Header](https://github.com/billoneta/kitsune/assets/103044629/2fb79692-c346-4d4f-b9a2-713468c5c485)
+![Header](https://github.com/billoneta/kitsune/assets/103044629/aae0c9c4-cb79-446f-bd10-5167545df6ac)
 
 <div align="center">
   <a aria-label="Build Status" href="https://github.com/billoneta/kitsune/actions">

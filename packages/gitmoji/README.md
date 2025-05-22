@@ -1,4 +1,4 @@
-![Header](https://github.com/billoneta/kitsune/assets/103044629/35d626e2-76f9-451a-918d-12f64f8c6bef)
+![Header](https://github.com/billoneta/kitsune/assets/103044629/a8da8625-d974-47b2-b942-bacaed5d6b90)
 
 <div align="center">
   <a aria-label="Written with" href="https://www.typescriptlang.org/">
