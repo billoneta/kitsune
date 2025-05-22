@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.32`](https://github.com/billoneta/kitsune/compare/v1.1.31...v1.1.32)
+🗓️ **Released:** `2025-05-22`
+
+#### 📝 Documentation
+
+update headers and shields in README.md files.
+
+
+<br/>
+
+[<img width="32" height="32" title="k4itrun" src="https://avatars.githubusercontent.com/u/103044629?v=4" />](https://github.com/k4itrun)
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Docs updates and improvements
+
+* Update headers and shields in README.md files ([fe2ac4f](https://github.com/billoneta/kitsune/commit/fe2ac4f)) - by: [<img width="16" height="16" src="https://avatars.githubusercontent.com/u/103044629?v=4" /> **k4itrun**](https://github.com/k4itrun)
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.31`](https://github.com/billoneta/kitsune/compare/v1.1.30...v1.1.31)
 🗓️ **Released:** `2025-05-19`
 
