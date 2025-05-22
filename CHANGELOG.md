@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.33`](https://github.com/billoneta/kitsune/compare/v1.1.32...v1.1.33)
+🗓️ **Released:** `2025-05-22`
+
+#### 📝 Documentation
+
+update headers in README.md files.
+
+
+<br/>
+
+[<img width="32" height="32" title="k4itrun" src="https://avatars.githubusercontent.com/u/103044629?v=4" />](https://github.com/k4itrun)
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Docs updates and improvements
+
+* Update headers in README.md files ([d2b5319](https://github.com/billoneta/kitsune/commit/d2b5319)) - by: [<img width="16" height="16" src="https://avatars.githubusercontent.com/u/103044629?v=4" /> **k4itrun**](https://github.com/k4itrun)
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.32`](https://github.com/billoneta/kitsune/compare/v1.1.31...v1.1.32)
 🗓️ **Released:** `2025-05-22`
 
