@@ -1,15 +1,14 @@
+![Header](https://github.com/billoneta/kitsune/assets/103044629/2fb79692-c346-4d4f-b9a2-713468c5c485)
+
 <div align="center">
-  <h1>🧰 The perfect config from <a href="https://github.com/billoneta/kitsune">@billoneta/kitsune</a></h1>
-  <b>🔥 <strong>Modular, reusable, and opinionated dev tools for modern projects.</strong></b>
-  <br/><br/>
-  <a aria-label="Written with" href="https://www.typescriptlang.org/">
-    <img src="https://img.shields.io/static/v1?label=Written%20with&message=Typescript&color=blue&logo=typescript"/>
+  <a aria-label="Build Status" href="https://github.com/billoneta/kitsune/actions">
+   <img src="https://img.shields.io/github/actions/workflow/status/billoneta/kitsune/build.yml?color=red&logo=github&branch=main&style=flat&label=Build"/>
   </a>
   <a aria-label="Version" href="https://github.com/billoneta/kitsune/releases">
-    <img src="https://img.shields.io/github/v/release/billoneta/kitsune?color=blue&logo=github&label=Version"/>
+    <img src="https://img.shields.io/github/v/release/billoneta/kitsune?color=red&logo=github&label=Version"/>
   </a>
   <a aria-label="Github License" href="https://github.com/billoneta/kitsune/blob/main/license.md">
-    <img src="https://img.shields.io/github/license/billoneta/kitsune?color=blue&logo=github&label=License"/>
+    <img src="https://img.shields.io/github/license/billoneta/kitsune?color=red&logo=github&label=License"/>
   </a>
 </div>
 

@@ -1,12 +1,11 @@
+![Header](https://github.com/billoneta/kitsune/assets/103044629/8a3a2439-d674-4d7f-91c3-cd184b4061f2)
+
 <div align="center">
-  <h1>🛠 <a href="https://github.com/billoneta/kitsune">@billoneta/utils</a></h1>
-  <p>🧰 <strong>Handy dev utilities and small helpers used across various projects.</strong></p>
-  <br/>
   <a aria-label="Written with" href="https://www.typescriptlang.org/">
-    <img src="https://img.shields.io/static/v1?label=Written%20with&message=Typescript&color=blue&logo=typescript"/>
+    <img src="https://img.shields.io/static/v1?label=Written%20with&message=Typescript&color=4c1&logo=node.js"/>
   </a>
-  <a aria-label="Version" href="https://github.com/billoneta/kitsune/releases">
-    <img src="https://img.shields.io/npm/v/@billoneta/utils/latest.svg"/>
+   <a aria-label="Version" href="https://github.com/billoneta/kitsune/releases">
+    <img src="https://img.shields.io/github/v/release/billoneta/kitsune?color=4c1&logo=github&label=Version"/>
   </a>
   <a aria-label="Weekly Downloads" href="https://www.npmjs.com/package/@billoneta/utils">
     <img src="https://img.shields.io/npm/dw/@billoneta/utils"/>
