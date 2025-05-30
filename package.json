@@ -41,7 +41,7 @@
     "@billoneta/gitmoji": "^1.0.5",
     "@billoneta/utils": "workspace:*",
     "markdown-table": "3.0.4",
-    "turbo": "2.5.3"
+    "turbo": "2.5.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
