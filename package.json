@@ -46,7 +46,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/types": "^19.8.1",
-    "@types/node": "22.15.28",
+    "@types/node": "22.15.29",
     "eslint": "9.28.0",
     "lefthook": "^1.11.13",
     "prettier": "3.5.3",
