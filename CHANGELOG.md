@@ -21,6 +21,35 @@
 
 ---
 
+### [Version&nbsp;`1.1.34`](https://github.com/billoneta/kitsune/compare/v1.1.33...v1.1.34)
+🗓️ **Released:** `2025-06-06`
+
+#### 🔧 Chores
+
+- **🎯 Config**: More robust modification for renovate.
+
+
+<br/>
+
+[<img width="32" height="32" title="k4itrun" src="https://avatars.githubusercontent.com/u/103044629?v=4" />](https://github.com/k4itrun)
+
+
+<details>
+<summary>What's New &amp; Fixed 🥂</summary>
+
+#### Other tasks and maintenance
+
+* **🎯 Config**: More robust modification for renovate ([8dd7314](https://github.com/billoneta/kitsune/commit/8dd7314)) - by: [<img width="16" height="16" src="https://avatars.githubusercontent.com/u/103044629?v=4" /> **k4itrun**](https://github.com/k4itrun)
+
+</details>
+
+
+<br/>
+
+<p align="right">
+    <a href="#changelog-top">Back to top 🚩</a>
+</p>
+
 ### [Version&nbsp;`1.1.33`](https://github.com/billoneta/kitsune/compare/v1.1.32...v1.1.33)
 🗓️ **Released:** `2025-05-22`
 
