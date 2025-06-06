@@ -1,47 +1,67 @@
 {
  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
- "extends": ["config:base", ":disableDependencyDashboard", ":semanticCommits", ":semanticCommitTypeAll(chore)"],
+
+ "extends": ["config:base", ":disableDependencyDashboard", ":semanticCommits", ":semanticCommitTypeAll(chore)", ":automergeAll", ":automergePatch", ":automergeMinor", ":automergeBranch", ":maintainLockFilesWeekly"],
+
+ "automerge": true,
+ "platformAutomerge": true,
+ "automergeType": "branch",
+ "automergeStrategy": "squash",
+ "rebaseWhen": "auto",
 
  "prHourlyLimit": 0,
  "prConcurrentLimit": 0,
 
  "semanticCommitScope": "deps",
 
- "automerge": true,
- "platformAutomerge": true,
- "automergeStrategy": "auto",
- "rebaseWhen": "conflicted",
-
- "prFooter": "",
- "prBodyTemplate": "{{{table}}}{{{warnings}}}{{{notes}}}{{{changelogs}}}{{{controls}}}{{{footer}}}",
+ "prBodyTemplate": "{{{table}}}{{{notes}}}{{{changelogs}}}",
 
  "labels": ["dependencies"],
  "assignees": ["k4itrun"],
- "reviewers": ["k4itrun"],
 
  "packageRules": [
   {
    "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies", "optionalDependencies"],
-   "rebaseWhen": "conflicted"
-  },
-  {
-   "matchPackagePatterns": [".*"]
-  },
-  {
-   "matchPaths": ["+(package.json)", "**/package.json"],
-   "labels": ["dependencies"]
+   "automerge": true,
+   "platformAutomerge": true
   },
   {
    "matchPackagePatterns": ["@udecode"],
-   "groupName": "@udecode/plate"
+   "groupName": "@udecode/plate",
+   "automerge": true
   },
   {
    "matchPackagePatterns": ["contentlayer"],
-   "groupName": "contentlayer"
+   "groupName": "contentlayer",
+   "automerge": true
   },
   {
    "matchPackageNames": ["eslint", "prettier", "lefthook", "typescript", "vitest", "jest"],
-   "groupName": "linters"
+   "groupName": "linters",
+   "automerge": true
+  },
+  {
+   "matchPackagePatterns": ["^react", "^@types/react"],
+   "groupName": "react",
+   "automerge": true
+  },
+  {
+   "matchPackagePatterns": ["^next"],
+   "groupName": "next",
+   "automerge": true
   }
- ]
+ ],
+
+ "requireConfig": "ignored",
+
+ "enabledManagers": ["npm", "yarn", "pnpm"],
+
+ "schedule": ["at any time"],
+
+ "vulnerabilityAlerts": {
+  "enabled": true,
+  "labels": ["security"],
+  "automerge": true,
+  "assignees": ["k4itrun"]
+ }
 }

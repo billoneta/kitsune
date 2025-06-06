@@ -92,11 +92,15 @@ git pull upstream main
 > [!CAUTION]
 > Keep the existing project structure intact and follow the **[Coding Standards](#%EF%B8%8F-coding-standards)** closely.
 
-> [!IMPORTANT] > **Before submitting your work:**
+<!-- prettier-ignore -->
+> [!IMPORTANT] 
+> **Before submitting your work:**
 >
 > - **All tests pass successfully.**
 > - **New tests are added if needed.**
 > - **Documentation is updated for new features or major changes.**
+
+<!-- prettier-ignore-end -->
 
 ### 5. 🚀 Push Your Changes
 
@@ -117,12 +121,16 @@ Your Pull Request should be clear, descriptive, and follow the required structur
 
 For full details on what your PR should include, please refer to the [Pull Request Template](.github/pull_request_template.md).
 
-> [!IMPORTANT] > **Before submitting your PR:**
+<!-- prettier-ignore -->
+> [!IMPORTANT] 
+> **Before submitting your PR:**
 >
 > - Make sure your branch is up to date.
 > - Ensure your code is **[Formatted and Linted](#2--keep-formatting-clean-and-consistent)**
 > - Follow the **[Commit message format](#1--use-the-correct-commit-message-format-eg-feat-add-login-button)**
 > - Include all **Relevant Context** and **Testing evidence**. This will help project maintainers and other contributors better understand your changes, provide effective feedback, and significantly increase the chances of your code being accepted and merged smoothly.
+
+<!-- prettier-ignore-end -->
 
 ---
 
