@@ -126,7 +126,7 @@
   "devDependencies": {
     "@commitlint/types": "^19.8.1",
     "@types/lodash.clonedeep": "^4.5.9",
-    "@types/node": "22.15.31",
+    "@types/node": "22.15.32",
     "glob": "^11.0.2",
     "rimraf": "6.0.1",
     "tsup": "^8.5.0",
