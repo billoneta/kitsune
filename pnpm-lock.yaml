@@ -197,8 +197,8 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
       pangu:
-        specifier: ^4.0.7
-        version: 4.0.7
+        specifier: ^5.0.0
+        version: 5.1.1
       sync-fetch:
         specifier: 0.6.0-2
         version: 0.6.0-2
@@ -2923,6 +2923,11 @@ packages:
 
   pangu@4.0.7:
     resolution: {integrity: sha512-weZKJIwwy5gjt4STGVUH9bix3BGk7wZ2ahtIypwe3e/mllsrIZIvtfLx1dPX56GcpZFOCFKmeqI1qVuB9enRzA==}
+    hasBin: true
+
+  pangu@5.1.1:
+    resolution: {integrity: sha512-n18qyrw0IJv60G8ak2ilsRuA3jTDKDjLpwQmCbiuHI251rc3SSfUc/K+j4FfBJJG3mCSbdGNAidGaa0Y5Gobyg==}
+    engines: {node: '>=18.0.0'}
     hasBin: true
 
   parent-module@1.0.1:
@@ -6605,6 +6610,8 @@ snapshots:
   package-json-from-dist@1.0.1: {}
 
   pangu@4.0.7: {}
+
+  pangu@5.1.1: {}
 
   parent-module@1.0.1:
     dependencies:
